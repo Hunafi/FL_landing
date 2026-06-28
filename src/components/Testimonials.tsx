@@ -5,7 +5,7 @@ export default function Testimonials() {
       age: "42 éves, Budapest",
       quote: "A ProShape shake-ekkel végre sikerült koplalás nélkül elérnem a célsúlyomat, miközben az energiaszintem is magas maradt. A csokoládés shake kifejezetten finom, olyan mintha egy prémium desszertet ennék, de bűntudat nélkül!",
       product: "TopShape Starter Set",
-      result: "-8 kg 12 hét alatt",
+      result: "korábbi karcsúbb alkat",
       avatarBg: "bg-rose-100 text-rose-800"
     },
     {
@@ -18,7 +18,7 @@ export default function Testimonials() {
     },
     {
       name: "Németh Andrea",
-      age: "29 éves, Debrecen",
+      age: "55 éves, Debrecen",
       quote: "Nem csak a centik csökkenésében segített: a közérzetem és a bőröm is látványosan javult. A bélrendszerem végre könnyedén működik, nincs az a nehéz, levert érzésem étkezések után. Mindenkinek csak ajánlani tudom!",
       product: "ProShape All-in-1 Vanília",
       result: "Könnyed emésztés & tónusos test",

@@ -106,14 +106,14 @@ export default function ProductShowcase() {
               )}
 
               {/* Product Image Wrapper */}
-              <div className="w-full aspect-square bg-neutral-50 rounded-2xl mb-6 relative overflow-hidden flex items-center justify-center p-4">
+              <div className="w-full aspect-square bg-white border border-neutral-100/60 rounded-2xl mb-6 relative overflow-hidden flex items-center justify-center p-4">
                 <Image
                   src={product.imageSrc}
                   alt={product.name}
-                  width={320}
-                  height={320}
+                  width={380}
+                  height={380}
                   loading="lazy"
-                  className="max-w-full h-auto object-contain max-h-[280px] hover:scale-105 transition-transform duration-300 drop-shadow-[0_4px_12px_rgba(0,0,0,0.06)]"
+                  className="max-w-full h-auto object-contain max-h-[320px] hover:scale-105 transition-transform duration-300"
                 />
               </div>
 

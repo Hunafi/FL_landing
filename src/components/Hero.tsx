@@ -38,7 +38,7 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 border border-transparent text-base font-bold rounded-full text-white bg-brand-orange hover:bg-brand-orange-hover shadow-lg hover:shadow-brand-orange/20 transition-all duration-200"
               >
-                Súlykontroll Termékek Vásárlása
+                Súlykontroll termékek
                 <svg className="w-5 h-5 ml-2 -mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
@@ -80,7 +80,7 @@ export default function Hero() {
                 className="object-cover hover:scale-102 transition-transform duration-700"
               />
               {/* Highlight badge for Gluten and Lactose free */}
-              <div className="absolute top-6 left-6 bg-brand-teal text-white text-xs font-semibold px-4 py-2 rounded-full shadow-md border border-white/10 backdrop-blur-sm">
+              <div className="absolute bottom-6 left-6 bg-brand-teal text-white text-xs font-semibold px-4 py-2 rounded-full shadow-md border border-white/10 backdrop-blur-sm">
                 🌾 Glutén- & Laktózmentes
               </div>
             </div>
