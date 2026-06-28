@@ -76,9 +76,9 @@ export default function Benefits() {
           {benefitList.map((benefit, index) => (
             <div
               key={index}
-              className="flex flex-col bg-brand-cream border border-neutral-100 dark:border-neutral-800 rounded-3xl p-8 hover:bg-white dark:hover:bg-brand-green-mid hover:border-brand-teal/20 hover:shadow-lg transition-all duration-300 group"
+              className="flex flex-col bg-brand-cream dark:bg-[#161618] border border-neutral-100 dark:border-neutral-800/60 rounded-3xl p-8 hover:bg-white dark:hover:bg-[#1a1a20] hover:border-brand-teal/20 hover:shadow-lg transition-all duration-300 group"
             >
-              <div className="w-12 h-12 rounded-2xl bg-white dark:bg-brand-green-dark border border-neutral-100 dark:border-neutral-800 flex items-center justify-center shadow-xs group-hover:bg-brand-teal group-hover:border-transparent transition-all duration-300 shrink-0">
+              <div className="w-12 h-12 rounded-2xl bg-white dark:bg-[#0a0a0a] border border-neutral-100 dark:border-neutral-800/80 flex items-center justify-center shadow-xs group-hover:bg-brand-teal group-hover:border-transparent transition-all duration-300 shrink-0">
                 {benefit.icon}
               </div>
               <h3 className="text-lg font-bold text-brand-slate mt-6 mb-3">

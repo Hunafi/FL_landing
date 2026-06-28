@@ -52,7 +52,7 @@ export default function Faq() {
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-xs font-bold text-brand-teal uppercase tracking-widest">Gyakran Ismételt Kérdések</h2>
-          <h3 className="text-3xl sm:text-4xl font-extrabold text-brand-green-dark tracking-tight">
+          <h3 className="text-3xl sm:text-4xl font-extrabold text-brand-green-dark dark:text-neutral-100 tracking-tight">
             Kérdések és Válaszok a FitLine-ról
           </h3>
           <p className="text-neutral-600 dark:text-neutral-300 font-light leading-relaxed max-w-2xl mx-auto">
@@ -69,8 +69,8 @@ export default function Faq() {
                 key={index}
                 className={`border rounded-2xl transition-all duration-300 ${
                   isOpen
-                    ? "border-brand-teal bg-teal-50/10 dark:bg-brand-teal/5 shadow-sm"
-                    : "border-neutral-200 dark:border-neutral-800 bg-brand-cream/40 dark:bg-brand-green-mid/20 hover:bg-brand-cream/80 dark:hover:bg-brand-green-mid/45"
+                    ? "border-brand-teal bg-teal-50/10 dark:bg-brand-teal/[0.03] shadow-sm"
+                    : "border-neutral-200 dark:border-neutral-800 bg-brand-cream/40 dark:bg-[#161618] hover:bg-brand-cream/80 dark:hover:bg-[#1f1f23]"
                 }`}
               >
                 <button
@@ -79,7 +79,7 @@ export default function Faq() {
                   className="w-full flex items-center justify-between px-6 py-5 text-left focus:outline-none"
                   aria-expanded={isOpen}
                 >
-                  <span className="text-base font-bold text-brand-green-dark pr-4">
+                  <span className="text-base font-bold text-brand-green-dark dark:text-neutral-100 pr-4">
                     {item.question}
                   </span>
                   <span className="shrink-0 ml-2">
@@ -101,7 +101,7 @@ export default function Faq() {
                     isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
                   }`}
                 >
-                  <div className="px-6 pb-6 text-sm text-neutral-600 dark:text-neutral-355 font-light leading-relaxed border-t border-neutral-100/50 dark:border-neutral-800 pt-4">
+                  <div className="px-6 pb-6 text-sm text-neutral-600 dark:text-neutral-300 font-light leading-relaxed border-t border-neutral-100/50 dark:border-neutral-800 pt-4">
                     {item.answer}
                   </div>
                 </div>

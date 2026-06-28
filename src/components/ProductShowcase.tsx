@@ -9,7 +9,7 @@ interface Product {
   isSvg: boolean;
   benefits: string[];
   tag?: string;
-  accentColor: string;
+  isHighlighted?: boolean;
 }
 
 const products: Product[] = [
@@ -26,7 +26,7 @@ const products: Product[] = [
       "Természetes módon glutén- és laktózmentes összetevők"
     ],
     tag: "Legnépszerűbb Választás",
-    accentColor: "border-brand-teal dark:border-brand-teal bg-brand-teal/[0.02] dark:bg-brand-teal/[0.05]"
+    isHighlighted: true
   },
   {
     id: "topshape",
@@ -40,8 +40,7 @@ const products: Product[] = [
       "Csökkenti az étkezések utáni sóvárgást és a nassolási vágyat",
       "Glutén- és laktózmentes, vegán összetétel"
     ],
-    tag: "Bestseller",
-    accentColor: "border-neutral-200 dark:border-neutral-850 bg-neutral-50/30 dark:bg-neutral-800/30"
+    tag: "Bestseller"
   },
   {
     id: "proshape-chocolate",
@@ -54,8 +53,7 @@ const products: Product[] = [
       "24 kulcsfontosságú vitamin, ásványi anyag és nyomelem",
       "Kiváló minőségű fehérjék az izomzat védelméért",
       "Krémes csokoládé íz, glutén- és laktózmentes receptúra"
-    ],
-    accentColor: "border-neutral-200 dark:border-neutral-850 bg-neutral-50/30 dark:bg-neutral-800/30"
+    ]
   },
   {
     id: "proshape-vanilla",
@@ -68,8 +66,7 @@ const products: Product[] = [
       "Ideális 1 vagy 2 főétkezés kiváltására naponta",
       "Segít elkerülni az éhségrohamokat és a fáradtságot",
       "Természetes Bourbon vanília íz, glutén- és laktózmentes"
-    ],
-    accentColor: "border-neutral-200 dark:border-neutral-850 bg-neutral-50/30 dark:bg-neutral-800/30"
+    ]
   }
 ];
 
@@ -84,7 +81,7 @@ export default function ProductShowcase() {
           <h3 className="text-3xl sm:text-4xl font-extrabold text-brand-slate dark:text-neutral-100 tracking-tight">
             Válassza ki az Életmódjához Illő Termékeket
           </h3>
-          <p className="text-neutral-500 dark:text-neutral-400 font-light leading-relaxed text-base md:text-lg">
+          <p className="text-neutral-600 dark:text-neutral-400 font-light leading-relaxed text-base md:text-lg">
             Minden termékünk a PM-International egyedülálló, szabadalmaztatott NTC® (Nutrient Transport Concept) rendszerével készül a maximális hatás érdekében. Prémium termékeink természetes módon <strong>laktózmentesek és gluténmentesek</strong>, így az ételérzékenységgel küzdők is bátran fogyaszthatják őket.
           </p>
         </div>
@@ -94,8 +91,10 @@ export default function ProductShowcase() {
           {products.map((product) => (
             <div
               key={product.id}
-              className={`flex flex-col rounded-3xl border p-6 bg-white dark:bg-brand-green-mid shadow-xs hover:shadow-xl transition-all duration-300 relative ${product.accentColor} ${
-                product.tag ? "border-brand-teal/80 dark:border-brand-teal border-2" : "border-neutral-200/80 dark:border-neutral-800"
+              className={`flex flex-col rounded-3xl border p-6 transition-all duration-300 relative shadow-xs hover:shadow-xl ${
+                product.isHighlighted
+                  ? "bg-brand-teal/[0.01] dark:bg-brand-teal/[0.03] border-brand-teal/80 dark:border-brand-teal border-2"
+                  : "bg-white dark:bg-[#161618] border-neutral-200/80 dark:border-neutral-800"
               }`}
             >
               {/* Tag for Highlighted Product */}
@@ -106,7 +105,7 @@ export default function ProductShowcase() {
               )}
 
               {/* Product Image Wrapper */}
-              <div className="w-full aspect-square bg-white dark:bg-neutral-800 border border-neutral-100/60 dark:border-neutral-700/65 rounded-2xl mb-6 relative overflow-hidden flex items-center justify-center p-4">
+              <div className="w-full aspect-square bg-neutral-50/60 dark:bg-[#0a0a0a] border border-neutral-100 dark:border-neutral-800/80 rounded-2xl mb-6 relative overflow-hidden flex items-center justify-center p-4">
                 <Image
                   src={product.imageSrc}
                   alt={product.name}
@@ -120,15 +119,15 @@ export default function ProductShowcase() {
               {/* Title & Description - Slightly bigger font */}
               <div className="space-y-2 flex-grow">
                 <div className="space-y-1">
-                  <h4 className="text-xs font-semibold text-neutral-400 dark:text-neutral-500 uppercase tracking-wider">{product.subName}</h4>
-                  <h3 className="text-xl font-bold text-brand-slate dark:text-neutral-100">{product.name}</h3>
+                  <h4 className="text-xs font-semibold text-neutral-400 dark:text-neutral-550 uppercase tracking-wider">{product.subName}</h4>
+                  <h3 className="text-xl font-bold text-neutral-900 dark:text-neutral-100">{product.name}</h3>
                 </div>
                 <p className="text-base text-neutral-600 dark:text-neutral-300 font-light leading-relaxed">
                   {product.description}
                 </p>
 
                 {/* Benefits List - Slightly bigger font */}
-                <ul className="pt-4 space-y-2 border-t border-neutral-100 dark:border-neutral-800">
+                <ul className="pt-4 space-y-2 border-t border-neutral-100 dark:border-neutral-800/60">
                   {product.benefits.map((benefit, index) => (
                     <li key={index} className="flex items-start text-sm text-neutral-700 dark:text-neutral-300">
                       <svg className="w-4 h-4 text-brand-teal mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -141,7 +140,7 @@ export default function ProductShowcase() {
               </div>
 
               {/* CTA Button */}
-              <div className="pt-6 mt-6 border-t border-neutral-100 dark:border-neutral-800">
+              <div className="pt-6 mt-6 border-t border-neutral-100 dark:border-neutral-800/60">
                 <a
                   href="https://www.fitline.com/hu/hu-hu/products?sponsor=21828601&category=weightmanagement"
                   target="_blank"

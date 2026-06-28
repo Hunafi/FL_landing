@@ -1,6 +1,6 @@
 export default function FinalCta() {
   return (
-    <section className="py-20 md:py-24 bg-white dark:bg-brand-green-dark text-brand-slate dark:text-neutral-100 relative overflow-hidden border-t border-neutral-100 dark:border-neutral-850">
+    <section className="py-20 md:py-24 bg-white dark:bg-brand-green-dark text-brand-slate dark:text-neutral-100 relative overflow-hidden border-t border-neutral-100 dark:border-neutral-800">
       {/* Background gradients */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(244,63,94,0.03),transparent_70%)]" />
       

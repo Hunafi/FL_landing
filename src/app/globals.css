@@ -4,7 +4,7 @@
 
 @theme {
   --font-sans: var(--font-outfit), system-ui, sans-serif;
-  --color-brand-green-dark: var(--brand-green-dark-val);   /* Clean luxury black / white in dark mode */
+  --color-brand-green-dark: #0a0a0a;   /* Clean luxury black (IM8 style) */
   --color-brand-green-mid: #161616;    /* Premium dark grey/charcoal */
   --color-brand-green-light: #262626;  /* Neutral slate borders */
   --color-brand-teal: #f43f5e;         /* IM8 signature coral pink */
@@ -23,7 +23,6 @@
   --foreground: #111111;
   --brand-cream: #fbfbfb;
   --brand-slate: #111111;
-  --brand-green-dark-val: #0a0a0a;
   --glass-bg: rgba(255, 255, 255, 0.8);
   --glass-border: rgba(0, 0, 0, 0.05);
   --scrollbar-track: #fbfbfb;
@@ -34,13 +33,12 @@
 
 .dark {
   --background: #0a0a0a;
-  --foreground: #fbfbfb;
-  --brand-cream: #0a0a0a;
-  --brand-slate: #fbfbfb;
-  --brand-green-dark-val: #ffffff;
-  --glass-bg: rgba(10, 10, 10, 0.85);
-  --glass-border: rgba(255, 255, 255, 0.05);
-  --scrollbar-track: #0a0a0a;
+  --foreground: #f3f4f6;
+  --brand-cream: #08080a;
+  --brand-slate: #f3f4f6;
+  --glass-bg: rgba(10, 10, 12, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.04);
+  --scrollbar-track: #08080a;
   --scrollbar-thumb: #262626;
   --scrollbar-thumb-hover: #3f3f46;
   color-scheme: dark;

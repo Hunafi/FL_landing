@@ -59,7 +59,7 @@ export default function Testimonials() {
                 </div>
 
                 {/* Quote - Slightly larger font */}
-                <p className="text-neutral-700 dark:text-neutral-355 italic font-light leading-relaxed text-base">
+                <p className="text-neutral-700 dark:text-neutral-300 italic font-light leading-relaxed text-base">
                   &ldquo;{review.quote}&rdquo;
                 </p>
               </div>
@@ -81,7 +81,7 @@ export default function Testimonials() {
                   <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brand-teal/5 border border-brand-teal/10 dark:border-brand-teal/30 text-brand-teal">
                     🎯 Eredmény: {review.result}
                   </span>
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-light bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 text-neutral-600 dark:text-neutral-300">
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-light bg-neutral-50 dark:bg-[#0a0a0a] border border-neutral-200 dark:border-neutral-800/80 text-neutral-600 dark:text-neutral-300">
                     📦 Használt termék: {review.product}
                   </span>
                 </div>

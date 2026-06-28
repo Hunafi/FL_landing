@@ -32,10 +32,10 @@ export default function Header() {
           {/* Logo / Brand Name */}
           <div className="flex-shrink-0 flex items-center">
             <a href="#" className="flex flex-col">
-              <span className="text-xl font-bold tracking-tight text-brand-green-dark">
+              <span className="text-xl font-bold tracking-tight text-brand-green-dark dark:text-white">
                 FitLine<span className="text-brand-orange">®</span>
               </span>
-              <span className="text-[10px] uppercase tracking-wider text-neutral-500 font-semibold leading-none">
+              <span className="text-[10px] uppercase tracking-wider text-neutral-500 dark:text-neutral-400 font-semibold leading-none">
                 Független Partner
               </span>
             </a>

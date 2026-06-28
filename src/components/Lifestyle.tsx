@@ -11,7 +11,7 @@ export default function Lifestyle() {
           
           {/* Visual Gallery / Single Image layout (Left) - Made to fit fully in one piece */}
           <div className="lg:col-span-6 relative">
-            <div className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden shadow-lg border border-neutral-200/50 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-800">
+            <div className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden shadow-lg border border-neutral-200/50 dark:border-neutral-800 bg-neutral-50 dark:bg-[#161618]">
               <Image
                 src="/women_cooking.jpg"
                 alt="Két hölgy a konyhában FitLine ProShape All-in-1 shake-et készít"
