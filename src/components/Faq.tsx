@@ -46,7 +46,7 @@ export default function Faq() {
   };
 
   return (
-    <section id="faq" className="py-20 md:py-28 bg-white relative">
+    <section id="faq" className="py-20 md:py-28 bg-white dark:bg-brand-green-dark relative">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -55,7 +55,7 @@ export default function Faq() {
           <h3 className="text-3xl sm:text-4xl font-extrabold text-brand-green-dark tracking-tight">
             Kérdések és Válaszok a FitLine-ról
           </h3>
-          <p className="text-neutral-600 font-light leading-relaxed max-w-2xl mx-auto">
+          <p className="text-neutral-600 dark:text-neutral-300 font-light leading-relaxed max-w-2xl mx-auto">
             Szeretnénk, ha minden információ birtokában hozná meg a döntését. Íme a leggyakoribb kérdések, amelyek a súlykontroll program kapcsán felmerülnek.
           </p>
         </div>
@@ -69,8 +69,8 @@ export default function Faq() {
                 key={index}
                 className={`border rounded-2xl transition-all duration-300 ${
                   isOpen
-                    ? "border-brand-teal bg-teal-50/10 shadow-sm"
-                    : "border-neutral-200 bg-brand-cream/40 hover:bg-brand-cream/80"
+                    ? "border-brand-teal bg-teal-50/10 dark:bg-brand-teal/5 shadow-sm"
+                    : "border-neutral-200 dark:border-neutral-800 bg-brand-cream/40 dark:bg-brand-green-mid/20 hover:bg-brand-cream/80 dark:hover:bg-brand-green-mid/45"
                 }`}
               >
                 <button
@@ -101,7 +101,7 @@ export default function Faq() {
                     isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0 pointer-events-none"
                   }`}
                 >
-                  <div className="px-6 pb-6 text-sm text-neutral-600 font-light leading-relaxed border-t border-neutral-100/50 pt-4">
+                  <div className="px-6 pb-6 text-sm text-neutral-600 dark:text-neutral-355 font-light leading-relaxed border-t border-neutral-100/50 dark:border-neutral-800 pt-4">
                     {item.answer}
                   </div>
                 </div>

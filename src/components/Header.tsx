@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,8 +23,8 @@ export default function Header() {
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "glassmorphism shadow-md py-3"
-          : "bg-transparent py-5"
+          ? "bg-white dark:bg-brand-green-dark md:glassmorphism shadow-md py-3"
+          : "bg-white dark:bg-brand-green-dark md:bg-transparent border-b border-neutral-100/50 dark:border-neutral-800/30 md:border-b-0 py-5"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -74,8 +75,9 @@ export default function Header() {
             </a>
           </nav>
 
-          {/* Header CTA Button */}
-          <div className="hidden md:block">
+          {/* Header CTA Button & Theme Switch */}
+          <div className="hidden md:flex items-center gap-4">
+            <ThemeToggle />
             <a
               href="https://www.fitline.com/hu/hu-hu/products?sponsor=21828601&category=weightmanagement"
               target="_blank"
@@ -86,12 +88,13 @@ export default function Header() {
             </a>
           </div>
 
-          {/* Mobile Menu Button */}
-          <div className="flex md:hidden">
+          {/* Mobile Menu Button & Theme Switch */}
+          <div className="flex md:hidden items-center gap-2">
+            <ThemeToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="inline-flex items-center justify-center p-2 rounded-md text-brand-slate hover:text-brand-green-light hover:bg-neutral-100 focus:outline-none transition-colors"
+              className="inline-flex items-center justify-center p-2 rounded-md text-brand-slate hover:text-brand-green-light dark:hover:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-800 focus:outline-none transition-colors"
               aria-controls="mobile-menu"
               aria-expanded={isOpen}
             >
@@ -137,43 +140,43 @@ export default function Header() {
       {/* Mobile Menu Overlay */}
       {isOpen && (
         <div className="md:hidden" id="mobile-menu">
-          <div className="px-2 pt-2 pb-4 space-y-1 sm:px-3 bg-white/95 backdrop-blur-md border-b border-neutral-200 shadow-lg mt-2 mx-4 rounded-2xl">
+          <div className="px-2 pt-2 pb-4 space-y-1 sm:px-3 bg-white/95 dark:bg-brand-green-mid/95 backdrop-blur-md border-b border-neutral-200 dark:border-neutral-800 shadow-lg mt-2 mx-4 rounded-2xl">
             <a
               href="#termekek"
               onClick={() => setIsOpen(false)}
-              className="block px-3 py-2 rounded-md text-base font-medium text-brand-slate hover:bg-neutral-50 hover:text-brand-teal"
+              className="block px-3 py-2 rounded-md text-base font-medium text-brand-slate hover:bg-neutral-50 dark:hover:bg-neutral-800 hover:text-brand-teal"
             >
               Termékek
             </a>
             <a
               href="#elonyök"
               onClick={() => setIsOpen(false)}
-              className="block px-3 py-2 rounded-md text-base font-medium text-brand-slate hover:bg-neutral-50 hover:text-brand-teal"
+              className="block px-3 py-2 rounded-md text-base font-medium text-brand-slate hover:bg-neutral-50 dark:hover:bg-neutral-800 hover:text-brand-teal"
             >
               Miért a FitLine?
             </a>
             <a
               href="#tudomany"
               onClick={() => setIsOpen(false)}
-              className="block px-3 py-2 rounded-md text-base font-medium text-brand-slate hover:bg-neutral-50 hover:text-brand-teal"
+              className="block px-3 py-2 rounded-md text-base font-medium text-brand-slate hover:bg-neutral-50 dark:hover:bg-neutral-800 hover:text-brand-teal"
             >
               Tudomány & NTC
             </a>
             <a
               href="#velemenyek"
               onClick={() => setIsOpen(false)}
-              className="block px-3 py-2 rounded-md text-base font-medium text-brand-slate hover:bg-neutral-50 hover:text-brand-teal"
+              className="block px-3 py-2 rounded-md text-base font-medium text-brand-slate hover:bg-neutral-50 dark:hover:bg-neutral-800 hover:text-brand-teal"
             >
               Vélemények
             </a>
             <a
               href="#faq"
               onClick={() => setIsOpen(false)}
-              className="block px-3 py-2 rounded-md text-base font-medium text-brand-slate hover:bg-neutral-50 hover:text-brand-teal"
+              className="block px-3 py-2 rounded-md text-base font-medium text-brand-slate hover:bg-neutral-50 dark:hover:bg-neutral-800 hover:text-brand-teal"
             >
               GYIK
             </a>
-            <div className="pt-4 pb-2 border-t border-neutral-100 px-3">
+            <div className="pt-4 pb-2 border-t border-neutral-100 dark:border-neutral-800 px-3">
               <a
                 href="https://www.fitline.com/hu/hu-hu/products?sponsor=21828601&category=weightmanagement"
                 target="_blank"

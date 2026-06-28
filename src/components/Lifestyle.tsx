@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Lifestyle() {
   return (
-    <section className="py-20 md:py-28 bg-white relative overflow-hidden">
+    <section className="py-20 md:py-28 bg-white dark:bg-brand-green-dark relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-1/2 right-0 -translate-y-1/2 w-72 h-72 bg-brand-teal/5 rounded-full blur-3xl -z-10" />
 
@@ -11,7 +11,7 @@ export default function Lifestyle() {
           
           {/* Visual Gallery / Single Image layout (Left) - Made to fit fully in one piece */}
           <div className="lg:col-span-6 relative">
-            <div className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden shadow-lg border border-neutral-200/50 bg-neutral-50">
+            <div className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden shadow-lg border border-neutral-200/50 dark:border-neutral-800 bg-neutral-50 dark:bg-neutral-800">
               <Image
                 src="/women_cooking.jpg"
                 alt="Két hölgy a konyhában FitLine ProShape All-in-1 shake-et készít"
@@ -30,39 +30,39 @@ export default function Lifestyle() {
           {/* Persuasive copy side (Right) */}
           <div className="lg:col-span-6 space-y-6 lg:pl-6">
             <h2 className="text-xs font-bold text-brand-teal uppercase tracking-widest">Életmódváltás Könnyedén</h2>
-            <h3 className="text-3xl sm:text-4xl font-extrabold text-brand-slate tracking-tight leading-tight">
+            <h3 className="text-3xl sm:text-4xl font-extrabold text-brand-slate dark:text-neutral-100 tracking-tight leading-tight">
               Az Alakformálás Nem Lemondás, Hanem Új Életenergia
             </h3>
             
-            <p className="text-neutral-500 font-light leading-relaxed text-base">
+            <p className="text-neutral-500 dark:text-neutral-400 font-light leading-relaxed text-base">
               Felejtse el az önsanyargató diétákat és a kínzó éhségérzetet. A FitLine programot úgy tervezték, hogy zökkenőmentesen beilleszkedjen a legzsúfoltabb mindennapokba is. Ráadásul a termékek <strong>laktóz- és gluténmentesek</strong>, így az ételérzékenységgel küzdők is teljesen biztonságosan fogyaszthatják.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
               <div className="space-y-2">
-                <h4 className="font-bold text-brand-slate text-base">Csak napi 2 perc</h4>
-                <p className="text-sm text-neutral-500 font-light leading-relaxed">
+                <h4 className="font-bold text-brand-slate dark:text-neutral-100 text-base">Csak napi 2 perc</h4>
+                <p className="text-sm text-neutral-500 dark:text-neutral-400 font-light leading-relaxed">
                   A shake-ek elkészítése kevesebb mint egy percet vesz igénybe, így bárhova magával viheti őket étkezéshelyettesítőként.
                 </p>
               </div>
 
               <div className="space-y-2">
-                <h4 className="font-bold text-brand-slate text-base">Finom ízek, nulla sóvárgás</h4>
-                <p className="text-sm text-neutral-500 font-light leading-relaxed">
+                <h4 className="font-bold text-brand-slate dark:text-neutral-100 text-base">Finom ízek, nulla sóvárgás</h4>
+                <p className="text-sm text-neutral-500 dark:text-neutral-400 font-light leading-relaxed">
                   A csokoládés és vaníliás shake-ek krémesek és ízletesek, így a diéta alatt sem kell lemondania a kulináris élvezetekről.
                 </p>
               </div>
 
               <div className="space-y-2">
-                <h4 className="font-bold text-brand-slate text-base">Megtartott izomtömeg</h4>
-                <p className="text-sm text-neutral-500 font-light leading-relaxed">
+                <h4 className="font-bold text-brand-slate dark:text-neutral-100 text-base">Megtartott izomtömeg</h4>
+                <p className="text-sm text-neutral-500 dark:text-neutral-400 font-light leading-relaxed">
                   A prémium fehérjék és tápanyagok biztosítják, hogy a fogyás a zsírszövetekből történjen, ne az aktív izmokból.
                 </p>
               </div>
 
               <div className="space-y-2">
-                <h4 className="font-bold text-brand-slate text-base">Jobb közérzet</h4>
-                <p className="text-sm text-neutral-500 font-light leading-relaxed">
+                <h4 className="font-bold text-brand-slate dark:text-neutral-100 text-base">Jobb közérzet</h4>
+                <p className="text-sm text-neutral-500 dark:text-neutral-400 font-light leading-relaxed">
                   Az optimalizált felszívódásnak köszönhetően nemcsak karcsúbb, hanem energikusabb, koncentráltabb és vidámabb lesz.
                 </p>
               </div>

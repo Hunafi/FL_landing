@@ -6,7 +6,7 @@ export default function Testimonials() {
       quote: "A ProShape shake-ekkel végre sikerült koplalás nélkül elérnem a célsúlyomat, miközben az energiaszintem is magas maradt. A csokoládés shake kifejezetten finom, olyan mintha egy prémium desszertet ennék, de bűntudat nélkül!",
       product: "TopShape Starter Set",
       result: "korábbi karcsúbb alkat",
-      avatarBg: "bg-rose-100 text-rose-800"
+      avatarBg: "bg-rose-100 dark:bg-rose-950/80 text-rose-800 dark:text-rose-200"
     },
     {
       name: "Kovács Péter",
@@ -14,7 +14,7 @@ export default function Testimonials() {
       quote: "Mindig gondot okozott a délutáni fáradtság és a folyamatos nassolási vágy az irodában. A TopShape rostok ebéd előtt eltelítenek és kellemes teltségérzetet adnak. Végre nem vágyom a cukorra és a nassolásra délután 3-kor!",
       product: "FitLine TopShape",
       result: "Megszűnt sóvárgás & laposabb has",
-      avatarBg: "bg-neutral-100 text-neutral-800"
+      avatarBg: "bg-neutral-100 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200"
     },
     {
       name: "Németh Andrea",
@@ -22,7 +22,7 @@ export default function Testimonials() {
       quote: "Nem csak a centik csökkenésében segített: a közérzetem és a bőröm is látványosan javult. A bélrendszerem végre könnyedén működik, nincs az a nehéz, levert érzésem étkezések után. Mindenkinek csak ajánlani tudom!",
       product: "ProShape All-in-1 Vanília",
       result: "Könnyed emésztés & tónusos test",
-      avatarBg: "bg-brand-gold-light text-brand-gold"
+      avatarBg: "bg-brand-gold-light dark:bg-rose-950/50 text-brand-gold dark:text-brand-teal"
     }
   ];
 
@@ -36,7 +36,7 @@ export default function Testimonials() {
           <h3 className="text-3xl sm:text-4xl font-extrabold text-brand-slate tracking-tight">
             Akik Már Elindultak a Változás Útján
           </h3>
-          <p className="text-neutral-500 font-light leading-relaxed text-base md:text-lg">
+          <p className="text-neutral-500 dark:text-neutral-400 font-light leading-relaxed text-base md:text-lg">
             Olvassa el azoknak a véleményét, akik a FitLine prémium termékeit választották a fenntartható életmódváltás és súlykontroll eléréséhez.
           </p>
         </div>
@@ -46,7 +46,7 @@ export default function Testimonials() {
           {reviews.map((review, index) => (
             <div
               key={index}
-              className="flex flex-col bg-white border border-neutral-200/80 rounded-3xl p-8 shadow-xs hover:shadow-md transition-all duration-300 relative justify-between"
+              className="flex flex-col bg-white dark:bg-brand-green-mid border border-neutral-200/80 dark:border-neutral-800 rounded-3xl p-8 shadow-xs hover:shadow-md transition-all duration-300 relative justify-between"
             >
               <div className="space-y-6">
                 {/* Stars */}
@@ -59,29 +59,29 @@ export default function Testimonials() {
                 </div>
 
                 {/* Quote - Slightly larger font */}
-                <p className="text-neutral-700 italic font-light leading-relaxed text-base">
+                <p className="text-neutral-700 dark:text-neutral-355 italic font-light leading-relaxed text-base">
                   &ldquo;{review.quote}&rdquo;
                 </p>
               </div>
 
               {/* Author & Results Footer */}
-              <div className="pt-6 mt-6 border-t border-neutral-100 space-y-4">
+              <div className="pt-6 mt-6 border-t border-neutral-100 dark:border-neutral-800 space-y-4">
                 <div className="flex items-center gap-4">
                   <div className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-lg shrink-0 ${review.avatarBg}`}>
                     {review.name[0]}
                   </div>
                   <div>
                     <h4 className="font-bold text-brand-slate text-sm">{review.name}</h4>
-                    <p className="text-xs text-neutral-500">{review.age}</p>
+                    <p className="text-xs text-neutral-500 dark:text-neutral-400">{review.age}</p>
                   </div>
                 </div>
                 
                 {/* Result highlight badge */}
                 <div className="flex flex-wrap gap-2 pt-1">
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brand-teal/5 border border-brand-teal/10 text-brand-teal">
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-brand-teal/5 border border-brand-teal/10 dark:border-brand-teal/30 text-brand-teal">
                     🎯 Eredmény: {review.result}
                   </span>
-                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-light bg-neutral-50 border border-neutral-200 text-neutral-600">
+                  <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-light bg-neutral-50 dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 text-neutral-600 dark:text-neutral-300">
                     📦 Használt termék: {review.product}
                   </span>
                 </div>
@@ -92,7 +92,7 @@ export default function Testimonials() {
 
         {/* Disclaimer note */}
         <div className="mt-12 text-center">
-          <p className="text-[11px] text-neutral-400 font-light max-w-2xl mx-auto">
+          <p className="text-[11px] text-neutral-400 dark:text-neutral-500 font-light max-w-2xl mx-auto">
             *Megjegyzés: Az elért eredmények egyénenként változhatnak, és megfelelő kalóriaszegény táplálkozás, valamint rendszeres testmozgás mellett valósulnak meg. A FitLine termékek nem alkalmasak betegségek diagnosztizálására vagy kezelésére.
           </p>
         </div>

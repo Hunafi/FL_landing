@@ -1,13 +1,13 @@
 export default function Footer() {
   return (
-    <footer className="bg-neutral-50 text-neutral-600 py-16 border-t border-neutral-200">
+    <footer className="bg-neutral-50 dark:bg-brand-green-dark text-neutral-600 dark:text-neutral-400 py-16 border-t border-neutral-200 dark:border-neutral-850">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
           
           {/* Column 1: Brand Info & Socials */}
           <div className="md:col-span-5 space-y-5">
             <div className="flex flex-col">
-              <span className="text-xl font-bold tracking-tight text-brand-slate">
+              <span className="text-xl font-bold tracking-tight text-brand-slate dark:text-white">
                 FitLine<span className="text-brand-orange">®</span>
               </span>
               <span className="text-[10px] uppercase tracking-wider text-neutral-400 font-semibold leading-none mt-1">
@@ -15,7 +15,7 @@ export default function Footer() {
               </span>
             </div>
             
-            <p className="text-xs text-neutral-500 font-light leading-relaxed max-w-sm">
+            <p className="text-xs text-neutral-500 dark:text-neutral-400 font-light leading-relaxed max-w-sm">
               Ez a weboldal egy független FitLine forgalmazó/partner által üzemeltetett ajánlói oldal, nem a PM-International AG hivatalos vállalati oldala. A vásárlások a hivatalos FitLine áruházban történnek biztonságos fizetéssel és központi szállítással.
             </p>
 
@@ -26,7 +26,7 @@ export default function Footer() {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-white border border-neutral-200 flex items-center justify-center text-neutral-500 hover:text-brand-teal hover:border-brand-teal/30 shadow-xs transition-all duration-200"
+                className="w-8 h-8 rounded-full bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 flex items-center justify-center text-neutral-500 dark:text-neutral-300 hover:text-brand-teal hover:border-brand-teal/30 shadow-xs transition-all duration-200"
                 aria-label="Facebook"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -39,7 +39,7 @@ export default function Footer() {
                 href="https://tiktok.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-white border border-neutral-200 flex items-center justify-center text-neutral-500 hover:text-brand-teal hover:border-brand-teal/30 shadow-xs transition-all duration-200"
+                className="w-8 h-8 rounded-full bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 flex items-center justify-center text-neutral-500 dark:text-neutral-300 hover:text-brand-teal hover:border-brand-teal/30 shadow-xs transition-all duration-200"
                 aria-label="TikTok"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -52,7 +52,7 @@ export default function Footer() {
                 href="https://youtube.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded-full bg-white border border-neutral-200 flex items-center justify-center text-neutral-500 hover:text-brand-teal hover:border-brand-teal/30 shadow-xs transition-all duration-200"
+                className="w-8 h-8 rounded-full bg-white dark:bg-neutral-800 border border-neutral-200 dark:border-neutral-700 flex items-center justify-center text-neutral-500 dark:text-neutral-300 hover:text-brand-teal hover:border-brand-teal/30 shadow-xs transition-all duration-200"
                 aria-label="YouTube"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -87,7 +87,7 @@ export default function Footer() {
           {/* Column 3: Contact/Disclaimer */}
           <div className="md:col-span-4 space-y-4">
             <h4 className="text-sm font-bold text-brand-slate uppercase tracking-wider">Hivatalos Vásárlás</h4>
-            <p className="text-xs text-neutral-500 font-light leading-relaxed">
+            <p className="text-xs text-neutral-500 dark:text-neutral-400 font-light leading-relaxed">
               Minden megrendelést a PM-International AG szolgál ki közvetlenül a hivatalos elosztó központokból. Az árak és az elégedettségi garancia megegyezik a hivatalos vásárlói feltételekkel.
             </p>
             <div className="pt-2">
@@ -105,11 +105,11 @@ export default function Footer() {
         </div>
 
         {/* Legal Disclaimers & Copyright */}
-        <div className="mt-12 pt-8 border-t border-neutral-200 text-center space-y-4">
-          <p className="text-[10px] text-neutral-500 font-light leading-relaxed max-w-4xl mx-auto">
+        <div className="mt-12 pt-8 border-t border-neutral-200 dark:border-neutral-800 text-center space-y-4">
+          <p className="text-[10px] text-neutral-500 dark:text-neutral-400 font-light leading-relaxed max-w-4xl mx-auto">
             <strong>Egészségügyi nyilatkozat:</strong> A termékek étrend-kiegészítők, nem minősülnek gyógyszernek, és nem alkalmasak betegségek megelőzésére, diagnosztizálására, kezelésére vagy gyógyítására. Az étrend-kiegészítők nem helyettesítik a kiegyensúlyozott, vegyes étrendet és az egészséges életmódot. Az elért testsúlycsúlycsökkentési eredmények egyénenként eltérhetnek a személyes anyagcsere, fizikai aktivitás és étrendi fegyelem függvényében.
           </p>
-          <p className="text-[10px] text-neutral-400 font-light">
+          <p className="text-[10px] text-neutral-400 dark:text-neutral-500 font-light">
             © {new Date().getFullYear()} FitLine Független Partner. Minden jog fenntartva. PM-International, FitLine, NTC logók és védjegyek a PM-International AG bejegyzett tulajdonát képezik.
           </p>
         </div>

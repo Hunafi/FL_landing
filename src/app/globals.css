@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-sans: var(--font-outfit), system-ui, sans-serif;
-  --color-brand-green-dark: #0a0a0a;   /* Clean luxury black (IM8 style) */
+  --color-brand-green-dark: var(--brand-green-dark-val);   /* Clean luxury black / white in dark mode */
   --color-brand-green-mid: #161616;    /* Premium dark grey/charcoal */
   --color-brand-green-light: #262626;  /* Neutral slate borders */
   --color-brand-teal: #f43f5e;         /* IM8 signature coral pink */
@@ -10,8 +12,8 @@
   --color-brand-gold: #f43f5e;         /* Highlight coral */
   --color-brand-gold-light: #ffe4e6;   /* Light rose base */
   --color-brand-orange: #f43f5e;       /* CTA coral pink */
-  --color-brand-cream: #fbfbfb;        /* Crisp white background */
-  --color-brand-slate: #111111;        /* Deep black typography */
+  --color-brand-cream: var(--brand-cream);        /* Dynamic background color */
+  --color-brand-slate: var(--brand-slate);        /* Dynamic typography color */
   --color-brand-gold-hover: #e11d48;   /* Coral hover state */
   --color-brand-orange-hover: #e11d48; /* Accent hover state */
 }
@@ -19,7 +21,29 @@
 :root {
   --background: #fbfbfb;
   --foreground: #111111;
+  --brand-cream: #fbfbfb;
+  --brand-slate: #111111;
+  --brand-green-dark-val: #0a0a0a;
+  --glass-bg: rgba(255, 255, 255, 0.8);
+  --glass-border: rgba(0, 0, 0, 0.05);
+  --scrollbar-track: #fbfbfb;
+  --scrollbar-thumb: #e4e4e7;
+  --scrollbar-thumb-hover: #d4d4d8;
   scroll-behavior: smooth;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #fbfbfb;
+  --brand-cream: #0a0a0a;
+  --brand-slate: #fbfbfb;
+  --brand-green-dark-val: #ffffff;
+  --glass-bg: rgba(10, 10, 10, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.05);
+  --scrollbar-track: #0a0a0a;
+  --scrollbar-thumb: #262626;
+  --scrollbar-thumb-hover: #3f3f46;
+  color-scheme: dark;
 }
 
 body {
@@ -32,23 +56,23 @@ body {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #fbfbfb;
+  background: var(--scrollbar-track);
 }
 ::-webkit-scrollbar-thumb {
-  background: #e4e4e7;
+  background: var(--scrollbar-thumb);
   border-radius: 5px;
-  border: 2px solid #fbfbfb;
+  border: 2px solid var(--scrollbar-track);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #d4d4d8;
+  background: var(--scrollbar-thumb-hover);
 }
 
 /* Glassmorphism Utilities */
 .glassmorphism {
-  background: rgba(255, 255, 255, 0.8);
+  background: var(--glass-bg);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--glass-border);
 }
 
 .glassmorphism-dark {
@@ -69,3 +93,4 @@ body {
   max-height: 500px;
   padding-bottom: 1.5rem;
 }
+

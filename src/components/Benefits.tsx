@@ -57,7 +57,7 @@ export default function Benefits() {
   ];
 
   return (
-    <section id="elonyök" className="py-20 md:py-28 bg-white relative">
+    <section id="elonyök" className="py-20 md:py-28 bg-white dark:bg-brand-green-dark relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -66,7 +66,7 @@ export default function Benefits() {
           <h3 className="text-3xl sm:text-4xl font-extrabold text-brand-slate tracking-tight">
             A FitLine Különbség: Miért Minket Válasszon?
           </h3>
-          <p className="text-neutral-500 font-light leading-relaxed">
+          <p className="text-neutral-500 dark:text-neutral-400 font-light leading-relaxed">
             Nemcsak a kilókat csökkentjük, hanem támogatjuk a test teljes egyensúlyát, hogy Ön a legjobb formájában érezze magát.
           </p>
         </div>
@@ -76,15 +76,15 @@ export default function Benefits() {
           {benefitList.map((benefit, index) => (
             <div
               key={index}
-              className="flex flex-col bg-brand-cream border border-neutral-100 rounded-3xl p-8 hover:bg-white hover:border-brand-teal/20 hover:shadow-lg transition-all duration-300 group"
+              className="flex flex-col bg-brand-cream border border-neutral-100 dark:border-neutral-800 rounded-3xl p-8 hover:bg-white dark:hover:bg-brand-green-mid hover:border-brand-teal/20 hover:shadow-lg transition-all duration-300 group"
             >
-              <div className="w-12 h-12 rounded-2xl bg-white border border-neutral-100 flex items-center justify-center shadow-xs group-hover:bg-brand-teal group-hover:border-transparent transition-all duration-300 shrink-0">
+              <div className="w-12 h-12 rounded-2xl bg-white dark:bg-brand-green-dark border border-neutral-100 dark:border-neutral-800 flex items-center justify-center shadow-xs group-hover:bg-brand-teal group-hover:border-transparent transition-all duration-300 shrink-0">
                 {benefit.icon}
               </div>
               <h3 className="text-lg font-bold text-brand-slate mt-6 mb-3">
                 {benefit.title}
               </h3>
-              <p className="text-sm text-neutral-500 font-light leading-relaxed flex-grow">
+              <p className="text-sm text-neutral-500 dark:text-neutral-400 font-light leading-relaxed flex-grow">
                 {benefit.description}
               </p>
             </div>

@@ -1,6 +1,6 @@
 export default function Science() {
   return (
-    <section id="tudomany" className="py-20 md:py-28 bg-neutral-50 text-brand-slate relative overflow-hidden border-y border-neutral-100">
+    <section id="tudomany" className="py-20 md:py-28 bg-neutral-50 dark:bg-brand-green-mid text-brand-slate relative overflow-hidden border-y border-neutral-100 dark:border-neutral-800">
       {/* Background gradients */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(244,63,94,0.02),transparent_50%)]" />
       <div className="absolute top-1/4 right-0 w-80 h-80 bg-brand-teal/[0.01] rounded-full blur-3xl" />
@@ -10,7 +10,7 @@ export default function Science() {
           
           {/* Scientific Text Content (Left) */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-neutral-100 border border-neutral-200/80 text-brand-teal text-xs font-semibold uppercase tracking-wider">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-neutral-100 dark:bg-neutral-800 border border-neutral-200/80 dark:border-neutral-700 text-brand-teal text-xs font-semibold uppercase tracking-wider">
               🔬 Tudományos Innováció
             </div>
             
@@ -21,7 +21,7 @@ export default function Science() {
               </span>
             </h2>
             
-            <p className="text-neutral-600 font-light leading-relaxed text-base md:text-lg">
+            <p className="text-neutral-600 dark:text-neutral-300 font-light leading-relaxed text-base md:text-lg">
               A FitLine termékek kiemelkedő hatékonyságának titka a szabadalmaztatott <strong>Tápanyag-szállítási Koncepció (NTC®)</strong>. Ez a technológia biztosítja, hogy a vitaminok, ásványi anyagok és zsírégető rostok pontosan oda kerüljenek, ahol és amikor szükség van rájuk – sejtszinten.
             </p>
 
@@ -33,7 +33,7 @@ export default function Science() {
                 </div>
                 <div>
                   <h4 className="text-base font-bold text-brand-slate">Rendkívül gyors felszívódás</h4>
-                  <p className="text-base text-neutral-500 font-light mt-0.5">
+                  <p className="text-base text-neutral-500 dark:text-neutral-400 font-light mt-0.5">
                     A folyékony formulák és a micellás technológia révén a tápanyagok percek alatt elérik a véráramot a gyomor megterhelése nélkül.
                   </p>
                 </div>
@@ -46,7 +46,7 @@ export default function Science() {
                 </div>
                 <div>
                   <h4 className="text-base font-bold text-brand-slate">Magasabb biohasznosulás</h4>
-                  <p className="text-base text-neutral-500 font-light mt-0.5">
+                  <p className="text-base text-neutral-500 dark:text-neutral-400 font-light mt-0.5">
                     Míg a hagyományos tabletták hatóanyagainak nagy része kiürül, a FitLine technológiája szinte teljes felszívódást biztosít.
                   </p>
                 </div>
@@ -59,7 +59,7 @@ export default function Science() {
                 </div>
                 <div>
                   <h4 className="text-base font-bold text-brand-slate">Szigorú tudományos háttér</h4>
-                  <p className="text-base text-neutral-500 font-light mt-0.5">
+                  <p className="text-base text-neutral-500 dark:text-neutral-400 font-light mt-0.5">
                     Több mint 30 év kutatás, nemzetközi szabadalmak és orvosokból, táplálkozáskutatókból álló tudományos testület garantálja a hatást.
                   </p>
                 </div>
@@ -69,7 +69,7 @@ export default function Science() {
 
           {/* Scientific Visual Panel (Right) */}
           <div className="lg:col-span-5">
-            <div className="bg-white border border-neutral-200/80 rounded-3xl p-8 shadow-lg relative overflow-hidden">
+            <div className="bg-white dark:bg-brand-green-dark border border-neutral-200/80 dark:border-neutral-800 rounded-3xl p-8 shadow-lg relative overflow-hidden">
               
               {/* Graphic circle representation */}
               <div className="relative flex justify-center mb-8">
@@ -89,18 +89,18 @@ export default function Science() {
 
               <div className="text-center space-y-4">
                 <h3 className="text-lg font-bold text-brand-slate">Tudományosan Igazolt Eredmények</h3>
-                <p className="text-xs text-neutral-500 font-light">
+                <p className="text-xs text-neutral-500 dark:text-neutral-400 font-light">
                   A PM-International együttműködik a Luxemburgi Tudományos és Technológiai Intézettel (LIST) a tápanyag-felszívódás folyamatos tökéletesítéséért.
                 </p>
                 
-                <div className="grid grid-cols-2 gap-4 pt-4 border-t border-neutral-100">
+                <div className="grid grid-cols-2 gap-4 pt-4 border-t border-neutral-100 dark:border-neutral-800">
                   <div className="text-left">
                     <div className="text-2xl font-bold text-brand-teal">70+</div>
-                    <div className="text-[10px] text-neutral-400 uppercase tracking-widest mt-0.5">Szabadalom</div>
+                    <div className="text-[10px] text-neutral-400 dark:text-neutral-500 uppercase tracking-widest mt-0.5">Szabadalom</div>
                   </div>
                   <div className="text-left">
                     <div className="text-2xl font-bold text-brand-teal">3M+</div>
-                    <div className="text-[10px] text-neutral-400 uppercase tracking-widest mt-0.5">Elégedett Ügyfél</div>
+                    <div className="text-[10px] text-neutral-400 dark:text-neutral-500 uppercase tracking-widest mt-0.5">Elégedett Ügyfél</div>
                   </div>
                 </div>
               </div>
