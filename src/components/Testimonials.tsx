@@ -11,8 +11,8 @@ export default function Testimonials() {
     {
       name: "Kovács Péter",
       age: "38 éves, Győr",
-      quote: "Mindig gondot okozott a délutáni fáradtság és a folyamatos nassolási vágy az irodában. A TopShape rostok ebéd előtt eltelítenek, a Herbaslim tea pedig segített megszüntetni a puffadást. Végre nem vágyom a cukorra délután 3-kor.",
-      product: "FitLine TopShape & Herbaslim Tea",
+      quote: "Mindig gondot okozott a délutáni fáradtság és a folyamatos nassolási vágy az irodában. A TopShape rostok ebéd előtt eltelítenek és kellemes teltségérzetet adnak. Végre nem vágyom a cukorra és a nassolásra délután 3-kor!",
+      product: "FitLine TopShape",
       result: "Megszűnt sóvárgás & laposabb has",
       avatarBg: "bg-neutral-100 text-neutral-800"
     },
@@ -36,7 +36,7 @@ export default function Testimonials() {
           <h3 className="text-3xl sm:text-4xl font-extrabold text-brand-slate tracking-tight">
             Akik Már Elindultak a Változás Útján
           </h3>
-          <p className="text-neutral-500 font-light leading-relaxed">
+          <p className="text-neutral-500 font-light leading-relaxed text-base md:text-lg">
             Olvassa el azoknak a véleményét, akik a FitLine prémium termékeit választották a fenntartható életmódváltás és súlykontroll eléréséhez.
           </p>
         </div>
@@ -58,8 +58,8 @@ export default function Testimonials() {
                   ))}
                 </div>
 
-                {/* Quote */}
-                <p className="text-neutral-700 italic font-light leading-relaxed text-sm">
+                {/* Quote - Slightly larger font */}
+                <p className="text-neutral-700 italic font-light leading-relaxed text-base">
                   &ldquo;{review.quote}&rdquo;
                 </p>
               </div>

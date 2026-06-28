@@ -26,7 +26,7 @@ const products: Product[] = [
       "Maximális tápanyag-felszívódás az NTC® technológiával"
     ],
     tag: "Legnépszerűbb Választás",
-    accentColor: "border-brand-teal bg-brand-teal/[0.03]"
+    accentColor: "border-brand-teal bg-brand-teal/[0.02]"
   },
   {
     id: "topshape",
@@ -41,7 +41,7 @@ const products: Product[] = [
       "Gluténmentes, vegán és könnyen beilleszthető a napi rutinba"
     ],
     tag: "Bestseller",
-    accentColor: "border-neutral-200 bg-neutral-50/50"
+    accentColor: "border-neutral-200 bg-neutral-50/30"
   },
   {
     id: "proshape-chocolate",
@@ -55,7 +55,7 @@ const products: Product[] = [
       "Kiváló minőségű fehérjék az izomzat védelméért",
       "Hihetetlenül krémes, prémium csokoládé ízélmény"
     ],
-    accentColor: "border-neutral-200 bg-neutral-50/50"
+    accentColor: "border-neutral-200 bg-neutral-50/30"
   },
   {
     id: "proshape-vanilla",
@@ -69,21 +69,7 @@ const products: Product[] = [
       "Segít elkerülni az éhségrohamokat és a fáradtságot",
       "Természetes Bourbon vanília aromával készül"
     ],
-    accentColor: "border-neutral-200 bg-neutral-50/50"
-  },
-  {
-    id: "herbaslim",
-    name: "FitLine Herbaslim Tea",
-    subName: "Gyógynövényes Tisztító és Hidratáló Tea",
-    description: "Hagyományos gyógynövények (borsmenta, hibiszkusz, édesgyökér) keveréke, amely támogatja a szervezet méregtelenítését és segíti a vízháztartást.",
-    imageSrc: "",
-    isSvg: true,
-    benefits: [
-      "Segíti a felesleges víz távozását és a puffadás csökkentését",
-      "Finom, frissítő íz cukor és kalóriák nélkül",
-      "Támogatja a vesék és a máj méregtelenítő funkcióit"
-    ],
-    accentColor: "border-neutral-200 bg-neutral-50/50"
+    accentColor: "border-neutral-200 bg-neutral-50/30"
   }
 ];
 
@@ -98,13 +84,13 @@ export default function ProductShowcase() {
           <h3 className="text-3xl sm:text-4xl font-extrabold text-brand-slate tracking-tight">
             Válassza ki az Életmódjához Illő Termékeket
           </h3>
-          <p className="text-neutral-500 font-light leading-relaxed">
+          <p className="text-neutral-500 font-light leading-relaxed text-base md:text-lg">
             Minden termékünk a PM-International egyedülálló, szabadalmaztatott NTC® (Nutrient Transport Concept) rendszerével készül a maximális hatás érdekében.
           </p>
         </div>
 
-        {/* Product Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
+        {/* Product Cards Grid - Adjusted to max-w-5xl and 2 columns for a balanced 4-product design */}
+        <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto gap-8 items-stretch">
           {products.map((product) => (
             <div
               key={product.id}
@@ -121,41 +107,30 @@ export default function ProductShowcase() {
 
               {/* Product Image Wrapper */}
               <div className="w-full aspect-square bg-neutral-50 rounded-2xl mb-6 relative overflow-hidden flex items-center justify-center p-4">
-                {product.isSvg ? (
-                  // Custom Graphic for Herbaslim Tea
-                  <div className="flex flex-col items-center justify-center text-neutral-800">
-                    <svg className="w-24 h-24 text-brand-teal opacity-90" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M17 8C17 5.2 14.8 3 12 3C9.2 3 7 5.2 7 8C7 10.4 8.7 12.4 11 12.9V18C11 18.6 11.4 19 12 19C12.6 19 13 18.6 13 18V12.9C15.3 12.4 17 10.4 17 8ZM12 11C10.3 11 9 9.7 9 8C9 6.3 10.3 5 12 5C13.7 5 15 6.3 15 8C15 9.7 13.7 11 12 11ZM2 21C2 21.6 2.4 22 3 22H21C21.6 22 22 21.6 22 21C22 20.4 21.6 20 21 20H3C2.4 20 2 20.4 2 21Z"/>
-                      <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" opacity="0.1"/>
-                    </svg>
-                    <span className="text-xs font-semibold text-neutral-600 mt-2 uppercase tracking-widest">Gyógynövény Teakeverék</span>
-                  </div>
-                ) : (
-                  <Image
-                    src={product.imageSrc}
-                    alt={product.name}
-                    width={320}
-                    height={320}
-                    loading="lazy"
-                    className="max-w-full h-auto object-contain max-h-[280px] hover:scale-105 transition-transform duration-300 drop-shadow-[0_4px_12px_rgba(0,0,0,0.06)]"
-                  />
-                )}
+                <Image
+                  src={product.imageSrc}
+                  alt={product.name}
+                  width={320}
+                  height={320}
+                  loading="lazy"
+                  className="max-w-full h-auto object-contain max-h-[280px] hover:scale-105 transition-transform duration-300 drop-shadow-[0_4px_12px_rgba(0,0,0,0.06)]"
+                />
               </div>
 
-              {/* Title & Description */}
+              {/* Title & Description - Slightly bigger font */}
               <div className="space-y-2 flex-grow">
                 <div className="space-y-1">
                   <h4 className="text-xs font-semibold text-neutral-400 uppercase tracking-wider">{product.subName}</h4>
                   <h3 className="text-xl font-bold text-brand-slate">{product.name}</h3>
                 </div>
-                <p className="text-sm text-neutral-600 font-light leading-relaxed">
+                <p className="text-base text-neutral-600 font-light leading-relaxed">
                   {product.description}
                 </p>
 
-                {/* Benefits List */}
+                {/* Benefits List - Slightly bigger font */}
                 <ul className="pt-4 space-y-2 border-t border-neutral-100">
                   {product.benefits.map((benefit, index) => (
-                    <li key={index} className="flex items-start text-xs text-neutral-700">
+                    <li key={index} className="flex items-start text-sm text-neutral-700">
                       <svg className="w-4 h-4 text-brand-teal mr-2 mt-0.5 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>

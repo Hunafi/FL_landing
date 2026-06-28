@@ -1,17 +1,17 @@
 export default function FinalCta() {
   return (
-    <section className="py-20 md:py-24 bg-brand-green-dark text-white relative overflow-hidden">
+    <section className="py-20 md:py-24 bg-white text-brand-slate relative overflow-hidden border-t border-neutral-100">
       {/* Background gradients */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(244,63,94,0.1),transparent_70%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(244,63,94,0.03),transparent_70%)]" />
       
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-8">
         
         <div className="space-y-4 max-w-3xl mx-auto">
           <h2 className="text-xs font-bold text-brand-teal uppercase tracking-widest">Kezdje el még ma</h2>
-          <h3 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+          <h3 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight text-brand-slate">
             Készen áll arra, hogy elérje a legjobb formáját?
           </h3>
-          <p className="text-neutral-400 font-light text-base md:text-lg leading-relaxed">
+          <p className="text-neutral-600 font-light text-lg md:text-xl leading-relaxed">
             Csatlakozzon több millió elégedett FitLine fogyasztóhoz világszerte. Kezdje el a súlycsökkentő programot teljesen kockázatmentesen a 30 napos elégedettségi garanciával!
           </p>
         </div>
@@ -32,7 +32,7 @@ export default function FinalCta() {
         </div>
 
         {/* Trust Badges under CTA */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto pt-10 border-t border-white/10 text-neutral-300">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-3xl mx-auto pt-10 border-t border-neutral-100 text-neutral-600">
           
           <div className="flex items-center justify-center sm:justify-start gap-3">
             <svg className="w-5 h-5 text-brand-teal shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
