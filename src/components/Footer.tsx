@@ -18,10 +18,6 @@ export default function Footer() {
             <p className="text-xs text-neutral-500 font-light leading-relaxed max-w-sm">
               Ez a weboldal egy független FitLine forgalmazó/partner által üzemeltetett ajánlói oldal, nem a PM-International AG hivatalos vállalati oldala. A vásárlások a hivatalos FitLine áruházban történnek biztonságos fizetéssel és központi szállítással.
             </p>
-            
-            <div className="text-xs text-brand-teal font-semibold">
-              Ajánló (Sponsor ID): 21828601
-            </div>
 
             {/* Social Icons Section */}
             <div className="flex items-center space-x-4 pt-2">

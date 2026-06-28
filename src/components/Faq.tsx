@@ -26,7 +26,7 @@ const faqItems: FaqItem[] = [
   },
   {
     question: "Hogyan tudok rendelni, és mennyi idő alatt érkeznek meg a termékek?",
-    answer: "A weboldalon található vásárlási gombok közvetlenül a hivatalos FitLine online áruházba irányítják Önt a partneri ajánlói kódommal (Sponsor ID: 21828601). A megrendelését közvetlenül a PM-International központi raktára dolgozza fel, és futárszolgálattal szállítja ki az Ön magyarországi címére, általában 2-4 munkanapon belül."
+    answer: "A weboldalon található vásárlási gombok közvetlenül a hivatalos FitLine online áruházba irányítják Önt. A megrendelését közvetlenül a PM-International központi raktára dolgozza fel, és futárszolgálattal szállítja ki az Ön magyarországi címére, általában 2-4 munkanapon belül."
   },
   {
     question: "Van-e garancia a termékekre?",
