@@ -1,26 +1,71 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: var(--font-outfit), system-ui, sans-serif;
+  --color-brand-green-dark: #0f2e1e;   /* Deep forest green (AG1/IM8 inspired) */
+  --color-brand-green-mid: #164e63;    /* Professional deep teal/cyan */
+  --color-brand-green-light: #15803d;  /* Fresh green */
+  --color-brand-teal: #0d9488;         /* Fresh teal */
+  --color-brand-emerald: #059669;      /* Vibrant weight/energy pop */
+  --color-brand-gold: #b45309;         /* Soft gold accent */
+  --color-brand-gold-light: #fef3c7;   /* Light gold base */
+  --color-brand-orange: #ea580c;       /* Energy/CTA orange */
+  --color-brand-cream: #fafaf9;        /* Warm neutral background */
+  --color-brand-slate: #1c1917;        /* Off black for rich typography */
+  --color-brand-gold-hover: #92400e;   /* Gold hover state */
+  --color-brand-orange-hover: #c2410c; /* Orange hover state */
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #fafaf9;
+  --foreground: #1c1917;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Premium Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #fafaf9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 5px;
+  border: 2px solid #fafaf9;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Glassmorphism Utilities */
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glassmorphism-dark {
+  background: rgba(15, 46, 30, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Accordion transition utility */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.accordion-active .accordion-content {
+  max-height: 500px;
+  padding-bottom: 1.5rem;
 }
