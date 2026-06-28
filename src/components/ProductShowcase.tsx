@@ -23,7 +23,7 @@ const products: Product[] = [
     benefits: [
       "Komplett napi rendszer a fenntartható súlycsökkentéshez",
       "Magas rost- és fehérjetartalom a tartós teltségérzetért",
-      "Maximális tápanyag-felszívódás az NTC® technológiával"
+      "Természetes módon glutén- és laktózmentes összetevők"
     ],
     tag: "Legnépszerűbb Választás",
     accentColor: "border-brand-teal bg-brand-teal/[0.02]"
@@ -38,7 +38,7 @@ const products: Product[] = [
     benefits: [
       "Bizonyítottan segíti a súlycsökkentést kalóriaszegény diéta mellett",
       "Csökkenti az étkezések utáni sóvárgást és a nassolási vágyat",
-      "Gluténmentes, vegán és könnyen beilleszthető a napi rutinba"
+      "Glutén- és laktózmentes, vegán összetétel"
     ],
     tag: "Bestseller",
     accentColor: "border-neutral-200 bg-neutral-50/30"
@@ -53,7 +53,7 @@ const products: Product[] = [
     benefits: [
       "24 kulcsfontosságú vitamin, ásványi anyag és nyomelem",
       "Kiváló minőségű fehérjék az izomzat védelméért",
-      "Hihetetlenül krémes, prémium csokoládé ízélmény"
+      "Krémes csokoládé íz, glutén- és laktózmentes receptúra"
     ],
     accentColor: "border-neutral-200 bg-neutral-50/30"
   },
@@ -67,7 +67,7 @@ const products: Product[] = [
     benefits: [
       "Ideális 1 vagy 2 főétkezés kiváltására naponta",
       "Segít elkerülni az éhségrohamokat és a fáradtságot",
-      "Természetes Bourbon vanília aromával készül"
+      "Természetes Bourbon vanília íz, glutén- és laktózmentes"
     ],
     accentColor: "border-neutral-200 bg-neutral-50/30"
   }
@@ -85,7 +85,7 @@ export default function ProductShowcase() {
             Válassza ki az Életmódjához Illő Termékeket
           </h3>
           <p className="text-neutral-500 font-light leading-relaxed text-base md:text-lg">
-            Minden termékünk a PM-International egyedülálló, szabadalmaztatott NTC® (Nutrient Transport Concept) rendszerével készül a maximális hatás érdekében.
+            Minden termékünk a PM-International egyedülálló, szabadalmaztatott NTC® (Nutrient Transport Concept) rendszerével készül a maximális hatás érdekében. Prémium termékeink természetes módon <strong>laktózmentesek és gluténmentesek</strong>, így az ételérzékenységgel küzdők is bátran fogyaszthatják őket.
           </p>
         </div>
 
@@ -143,7 +143,7 @@ export default function ProductShowcase() {
               {/* CTA Button */}
               <div className="pt-6 mt-6 border-t border-neutral-100">
                 <a
-                  href="https://www.fitline.com/?sponsor=21828601"
+                  href="https://www.fitline.com/hu/hu-hu/products?sponsor=21828601&category=weightmanagement"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full flex items-center justify-center px-4 py-3 border border-transparent text-sm font-bold rounded-full text-white bg-brand-orange hover:bg-brand-orange-hover shadow-xs transition-all duration-200"

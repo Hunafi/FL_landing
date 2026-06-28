@@ -92,7 +92,7 @@ export default function Footer() {
             </p>
             <div className="pt-2">
               <a
-                href="https://www.fitline.com/?sponsor=21828601"
+                href="https://www.fitline.com/hu/hu-hu/products?sponsor=21828601&category=weightmanagement"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-xs font-bold rounded-full text-white bg-brand-orange hover:bg-brand-orange-hover shadow-sm transition-all duration-200"

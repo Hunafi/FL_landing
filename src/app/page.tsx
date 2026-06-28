@@ -48,7 +48,7 @@ export default function Home() {
         },
         "offers": {
           "@type": "Offer",
-          "url": "https://www.fitline.com/?sponsor=21828601",
+          "url": "https://www.fitline.com/hu/hu-hu/products?sponsor=21828601&category=weightmanagement",
           "priceCurrency": "HUF",
           "availability": "https://schema.org/InStock",
           "seller": {

@@ -77,7 +77,7 @@ export default function Header() {
           {/* Header CTA Button */}
           <div className="hidden md:block">
             <a
-              href="https://www.fitline.com/?sponsor=21828601"
+              href="https://www.fitline.com/hu/hu-hu/products?sponsor=21828601&category=weightmanagement"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-sm font-semibold rounded-full text-white bg-brand-orange hover:bg-brand-orange-hover shadow-sm hover:shadow transition-all duration-200"
@@ -175,7 +175,7 @@ export default function Header() {
             </a>
             <div className="pt-4 pb-2 border-t border-neutral-100 px-3">
               <a
-                href="https://www.fitline.com/?sponsor=21828601"
+                href="https://www.fitline.com/hu/hu-hu/products?sponsor=21828601&category=weightmanagement"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full flex items-center justify-center px-4 py-3 border border-transparent text-base font-semibold rounded-full text-white bg-brand-orange hover:bg-brand-orange-hover shadow-sm"

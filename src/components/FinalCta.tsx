@@ -19,7 +19,7 @@ export default function FinalCta() {
         {/* Primary CTA button with animation pop */}
         <div className="pt-4">
           <a
-            href="https://www.fitline.com/?sponsor=21828601"
+            href="https://www.fitline.com/hu/hu-hu/products?sponsor=21828601&category=weightmanagement"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-10 py-5 border border-transparent text-base font-extrabold rounded-full text-white bg-brand-orange hover:bg-brand-orange-hover shadow-xl hover:shadow-brand-orange/35 scale-100 hover:scale-102 transition-all duration-200"
