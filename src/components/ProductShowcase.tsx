@@ -26,7 +26,7 @@ const products: Product[] = [
       "Maximális tápanyag-felszívódás az NTC® technológiával"
     ],
     tag: "Legnépszerűbb Választás",
-    accentColor: "border-brand-gold bg-brand-gold-light/10"
+    accentColor: "border-brand-teal bg-brand-teal/[0.03]"
   },
   {
     id: "topshape",
@@ -41,12 +41,12 @@ const products: Product[] = [
       "Gluténmentes, vegán és könnyen beilleszthető a napi rutinba"
     ],
     tag: "Bestseller",
-    accentColor: "border-brand-teal bg-teal-50/20"
+    accentColor: "border-neutral-200 bg-neutral-50/50"
   },
   {
     id: "proshape-chocolate",
     name: "FitLine ProShape All-in-1",
-    subName: "Prémium Shake - Krémes Csokoládé",
+    subName: "Shake - Krémes Csokoládé",
     description: "Teljes értékű étkezést helyettesítő koktél, amely zöld kávébab- és csalánkivonattal pörgeti fel a zsírégetést az izomtömeg megtartása mellett.",
     imageSrc: "/proshape_chocolate.png",
     isSvg: false,
@@ -55,12 +55,12 @@ const products: Product[] = [
       "Kiváló minőségű fehérjék az izomzat védelméért",
       "Hihetetlenül krémes, prémium csokoládé ízélmény"
     ],
-    accentColor: "border-neutral-200 bg-neutral-50/30"
+    accentColor: "border-neutral-200 bg-neutral-50/50"
   },
   {
     id: "proshape-vanilla",
     name: "FitLine ProShape All-in-1",
-    subName: "Prémium Shake - Bourbon Vanília",
+    subName: "Shake - Bourbon Vanília",
     description: "Lágy vanília ízű étkezéshelyettesítő shake. Biztosítja az összes szükséges mikrotápanyagot és fehérjét, így helyettesítve a teljes értékű étkezéseket.",
     imageSrc: "/proshape_vanilla.png",
     isSvg: false,
@@ -69,7 +69,7 @@ const products: Product[] = [
       "Segít elkerülni az éhségrohamokat és a fáradtságot",
       "Természetes Bourbon vanília aromával készül"
     ],
-    accentColor: "border-neutral-200 bg-neutral-50/30"
+    accentColor: "border-neutral-200 bg-neutral-50/50"
   },
   {
     id: "herbaslim",
@@ -83,22 +83,22 @@ const products: Product[] = [
       "Finom, frissítő íz cukor és kalóriák nélkül",
       "Támogatja a vesék és a máj méregtelenítő funkcióit"
     ],
-    accentColor: "border-emerald-200 bg-emerald-50/20"
+    accentColor: "border-neutral-200 bg-neutral-50/50"
   }
 ];
 
 export default function ProductShowcase() {
   return (
-    <section id="termekek" className="py-20 md:py-28 bg-brand-cream relative">
+    <section id="termekek" className="py-20 md:py-28 bg-white relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h2 className="text-xs font-bold text-brand-teal uppercase tracking-widest">FitLine Súlycsökkentő Megoldások</h2>
-          <h3 className="text-3xl sm:text-4xl font-extrabold text-brand-green-dark tracking-tight">
+          <h3 className="text-3xl sm:text-4xl font-extrabold text-brand-slate tracking-tight">
             Válassza ki az Életmódjához Illő Termékeket
           </h3>
-          <p className="text-neutral-600 font-light leading-relaxed">
+          <p className="text-neutral-500 font-light leading-relaxed">
             Minden termékünk a PM-International egyedülálló, szabadalmaztatott NTC® (Nutrient Transport Concept) rendszerével készül a maximális hatás érdekében.
           </p>
         </div>
@@ -109,12 +109,12 @@ export default function ProductShowcase() {
             <div
               key={product.id}
               className={`flex flex-col rounded-3xl border p-6 bg-white shadow-xs hover:shadow-xl transition-all duration-300 relative ${product.accentColor} ${
-                product.tag ? "lg:col-span-1 border-2" : "border-neutral-200/80"
+                product.tag ? "border-brand-teal/80 border-2" : "border-neutral-200/80"
               }`}
             >
               {/* Tag for Highlighted Product */}
               {product.tag && (
-                <span className="absolute -top-3 left-6 px-4 py-1 rounded-full bg-brand-gold text-white text-[11px] font-bold tracking-wider uppercase shadow-sm">
+                <span className="absolute -top-3 left-6 px-4 py-1 rounded-full bg-brand-teal text-white text-[10px] font-bold tracking-wider uppercase shadow-sm">
                   {product.tag}
                 </span>
               )}
@@ -123,12 +123,12 @@ export default function ProductShowcase() {
               <div className="w-full aspect-square bg-neutral-50 rounded-2xl mb-6 relative overflow-hidden flex items-center justify-center p-4">
                 {product.isSvg ? (
                   // Custom Graphic for Herbaslim Tea
-                  <div className="flex flex-col items-center justify-center text-emerald-800">
-                    <svg className="w-32 h-32 opacity-85" fill="currentColor" viewBox="0 0 24 24">
+                  <div className="flex flex-col items-center justify-center text-neutral-800">
+                    <svg className="w-24 h-24 text-brand-teal opacity-90" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M17 8C17 5.2 14.8 3 12 3C9.2 3 7 5.2 7 8C7 10.4 8.7 12.4 11 12.9V18C11 18.6 11.4 19 12 19C12.6 19 13 18.6 13 18V12.9C15.3 12.4 17 10.4 17 8ZM12 11C10.3 11 9 9.7 9 8C9 6.3 10.3 5 12 5C13.7 5 15 6.3 15 8C15 9.7 13.7 11 12 11ZM2 21C2 21.6 2.4 22 3 22H21C21.6 22 22 21.6 22 21C22 20.4 21.6 20 21 20H3C2.4 20 2 20.4 2 21Z"/>
                       <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" opacity="0.1"/>
                     </svg>
-                    <span className="text-xs font-semibold text-emerald-700 mt-2 uppercase tracking-widest">Gyógynövény Teakeverék</span>
+                    <span className="text-xs font-semibold text-neutral-600 mt-2 uppercase tracking-widest">Gyógynövény Teakeverék</span>
                   </div>
                 ) : (
                   <Image
@@ -137,7 +137,7 @@ export default function ProductShowcase() {
                     width={320}
                     height={320}
                     loading="lazy"
-                    className="object-contain hover:scale-105 transition-transform duration-300 drop-shadow-[0_4px_12px_rgba(0,0,0,0.08)]"
+                    className="max-w-full h-auto object-contain max-h-[280px] hover:scale-105 transition-transform duration-300 drop-shadow-[0_4px_12px_rgba(0,0,0,0.06)]"
                   />
                 )}
               </div>
@@ -146,7 +146,7 @@ export default function ProductShowcase() {
               <div className="space-y-2 flex-grow">
                 <div className="space-y-1">
                   <h4 className="text-xs font-semibold text-neutral-400 uppercase tracking-wider">{product.subName}</h4>
-                  <h3 className="text-xl font-bold text-brand-green-dark">{product.name}</h3>
+                  <h3 className="text-xl font-bold text-brand-slate">{product.name}</h3>
                 </div>
                 <p className="text-sm text-neutral-600 font-light leading-relaxed">
                   {product.description}
@@ -171,7 +171,7 @@ export default function ProductShowcase() {
                   href="https://www.fitline.com/?sponsor=21828601"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full flex items-center justify-center px-4 py-3 border border-transparent text-sm font-bold rounded-full text-white bg-brand-green-dark hover:bg-brand-green-light shadow-sm transition-all duration-200"
+                  className="w-full flex items-center justify-center px-4 py-3 border border-transparent text-sm font-bold rounded-full text-white bg-brand-slate hover:bg-brand-teal shadow-xs transition-all duration-200"
                 >
                   Rendelés a Hivatalos Shopban
                   <svg className="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

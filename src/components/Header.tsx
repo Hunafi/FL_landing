@@ -44,31 +44,31 @@ export default function Header() {
           <nav className="hidden md:flex space-x-8 items-center">
             <a
               href="#termekek"
-              className="text-sm font-medium text-brand-slate/85 hover:text-brand-green-light transition-colors"
+              className="text-sm font-medium text-brand-slate/85 hover:text-brand-teal transition-colors"
             >
               Termékek
             </a>
             <a
               href="#elonyök"
-              className="text-sm font-medium text-brand-slate/85 hover:text-brand-green-light transition-colors"
+              className="text-sm font-medium text-brand-slate/85 hover:text-brand-teal transition-colors"
             >
               Miért a FitLine?
             </a>
             <a
               href="#tudomany"
-              className="text-sm font-medium text-brand-slate/85 hover:text-brand-green-light transition-colors"
+              className="text-sm font-medium text-brand-slate/85 hover:text-brand-teal transition-colors"
             >
               Tudomány & NTC
             </a>
             <a
               href="#velemenyek"
-              className="text-sm font-medium text-brand-slate/85 hover:text-brand-green-light transition-colors"
+              className="text-sm font-medium text-brand-slate/85 hover:text-brand-teal transition-colors"
             >
               Vélemények
             </a>
             <a
               href="#faq"
-              className="text-sm font-medium text-brand-slate/85 hover:text-brand-green-light transition-colors"
+              className="text-sm font-medium text-brand-slate/85 hover:text-brand-teal transition-colors"
             >
               GYIK
             </a>
@@ -141,35 +141,35 @@ export default function Header() {
             <a
               href="#termekek"
               onClick={() => setIsOpen(false)}
-              className="block px-3 py-2 rounded-md text-base font-medium text-brand-slate hover:bg-neutral-50 hover:text-brand-green-light"
+              className="block px-3 py-2 rounded-md text-base font-medium text-brand-slate hover:bg-neutral-50 hover:text-brand-teal"
             >
               Termékek
             </a>
             <a
               href="#elonyök"
               onClick={() => setIsOpen(false)}
-              className="block px-3 py-2 rounded-md text-base font-medium text-brand-slate hover:bg-neutral-50 hover:text-brand-green-light"
+              className="block px-3 py-2 rounded-md text-base font-medium text-brand-slate hover:bg-neutral-50 hover:text-brand-teal"
             >
               Miért a FitLine?
             </a>
             <a
               href="#tudomany"
               onClick={() => setIsOpen(false)}
-              className="block px-3 py-2 rounded-md text-base font-medium text-brand-slate hover:bg-neutral-50 hover:text-brand-green-light"
+              className="block px-3 py-2 rounded-md text-base font-medium text-brand-slate hover:bg-neutral-50 hover:text-brand-teal"
             >
               Tudomány & NTC
             </a>
             <a
               href="#velemenyek"
               onClick={() => setIsOpen(false)}
-              className="block px-3 py-2 rounded-md text-base font-medium text-brand-slate hover:bg-neutral-50 hover:text-brand-green-light"
+              className="block px-3 py-2 rounded-md text-base font-medium text-brand-slate hover:bg-neutral-50 hover:text-brand-teal"
             >
               Vélemények
             </a>
             <a
               href="#faq"
               onClick={() => setIsOpen(false)}
-              className="block px-3 py-2 rounded-md text-base font-medium text-brand-slate hover:bg-neutral-50 hover:text-brand-green-light"
+              className="block px-3 py-2 rounded-md text-base font-medium text-brand-slate hover:bg-neutral-50 hover:text-brand-teal"
             >
               GYIK
             </a>

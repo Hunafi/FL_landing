@@ -2,23 +2,23 @@
 
 @theme {
   --font-sans: var(--font-outfit), system-ui, sans-serif;
-  --color-brand-green-dark: #0f2e1e;   /* Deep forest green (AG1/IM8 inspired) */
-  --color-brand-green-mid: #164e63;    /* Professional deep teal/cyan */
-  --color-brand-green-light: #15803d;  /* Fresh green */
-  --color-brand-teal: #0d9488;         /* Fresh teal */
-  --color-brand-emerald: #059669;      /* Vibrant weight/energy pop */
-  --color-brand-gold: #b45309;         /* Soft gold accent */
-  --color-brand-gold-light: #fef3c7;   /* Light gold base */
-  --color-brand-orange: #ea580c;       /* Energy/CTA orange */
-  --color-brand-cream: #fafaf9;        /* Warm neutral background */
-  --color-brand-slate: #1c1917;        /* Off black for rich typography */
-  --color-brand-gold-hover: #92400e;   /* Gold hover state */
-  --color-brand-orange-hover: #c2410c; /* Orange hover state */
+  --color-brand-green-dark: #0a0a0a;   /* Clean luxury black (IM8 style) */
+  --color-brand-green-mid: #161616;    /* Premium dark grey/charcoal */
+  --color-brand-green-light: #262626;  /* Neutral slate borders */
+  --color-brand-teal: #f43f5e;         /* IM8 signature coral pink */
+  --color-brand-emerald: #fb7185;      /* Energy rose pop */
+  --color-brand-gold: #f43f5e;         /* Highlight coral */
+  --color-brand-gold-light: #ffe4e6;   /* Light rose base */
+  --color-brand-orange: #f43f5e;       /* CTA coral pink */
+  --color-brand-cream: #fbfbfb;        /* Crisp white background */
+  --color-brand-slate: #111111;        /* Deep black typography */
+  --color-brand-gold-hover: #e11d48;   /* Coral hover state */
+  --color-brand-orange-hover: #e11d48; /* Accent hover state */
 }
 
 :root {
-  --background: #fafaf9;
-  --foreground: #1c1917;
+  --background: #fbfbfb;
+  --foreground: #111111;
   scroll-behavior: smooth;
 }
 
@@ -32,30 +32,30 @@ body {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #fafaf9;
+  background: #fbfbfb;
 }
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: #e4e4e7;
   border-radius: 5px;
-  border: 2px solid #fafaf9;
+  border: 2px solid #fbfbfb;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: #d4d4d8;
 }
 
 /* Glassmorphism Utilities */
 .glassmorphism {
-  background: rgba(255, 255, 255, 0.75);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .glassmorphism-dark {
-  background: rgba(15, 46, 30, 0.85);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(10, 10, 10, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 /* Accordion transition utility */
