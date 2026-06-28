@@ -146,7 +146,7 @@ export default function ProductShowcase() {
                   href="https://www.fitline.com/?sponsor=21828601"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full flex items-center justify-center px-4 py-3 border border-transparent text-sm font-bold rounded-full text-white bg-brand-slate hover:bg-brand-teal shadow-xs transition-all duration-200"
+                  className="w-full flex items-center justify-center px-4 py-3 border border-transparent text-sm font-bold rounded-full text-white bg-brand-orange hover:bg-brand-orange-hover shadow-xs transition-all duration-200"
                 >
                   Rendelés a Hivatalos Shopban
                   <svg className="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

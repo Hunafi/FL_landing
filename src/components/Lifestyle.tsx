@@ -15,8 +15,8 @@ export default function Lifestyle() {
             {/* Main Lifestyle Image */}
             <div className="col-span-8 relative aspect-[4/5] rounded-3xl overflow-hidden shadow-lg border border-neutral-100">
               <Image
-                src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&q=80&w=600"
-                alt="Egészséges reggeli összetevők"
+                src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?auto=format&fit=crop&q=80&w=600"
+                alt="Hölgy egészséges FitLine shake-et fogyaszt"
                 fill
                 sizes="(max-width: 600px) 100vw, 400px"
                 loading="lazy"
