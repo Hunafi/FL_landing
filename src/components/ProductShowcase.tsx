@@ -15,7 +15,7 @@ interface Product {
 const products: Product[] = [
   {
     id: "topshape-starter",
-    name: "FitLine TopShape Starter Set",
+    name: "TopShape Starter Set",
     subName: "Komplex Életmódváltó Csomag",
     description: "A legnépszerűbb kombináció a látványos és tartós eredményekhez. Tartalmazza a TopShape rostkomplexet és a ProShape All-in-1 shake-eket a teljes átalakulásért.",
     imageSrc: "/topshape_starterset.png",
@@ -30,7 +30,7 @@ const products: Product[] = [
   },
   {
     id: "topshape",
-    name: "FitLine TopShape",
+    name: "TopShape",
     subName: "Prémium Súlykontroll Rostkomplex",
     description: "Speciális rostkomplex glükomannánnal, amely csökkenti az étvágyat, tisztítja a bélrendszert és természetes teltséget biztosít a fogyókúra alatt.",
     imageSrc: "/topshape.png",
@@ -44,7 +44,7 @@ const products: Product[] = [
   },
   {
     id: "proshape-chocolate",
-    name: "FitLine ProShape All-in-1",
+    name: "ProShape All-in-1",
     subName: "Shake - Krémes Csokoládé",
     description: "Teljes értékű étkezést helyettesítő koktél, amely zöld kávébab- és csalánkivonattal pörgeti fel a zsírégetést az izomtömeg megtartása mellett.",
     imageSrc: "/proshape_chocolate.png",
@@ -57,7 +57,7 @@ const products: Product[] = [
   },
   {
     id: "proshape-vanilla",
-    name: "FitLine ProShape All-in-1",
+    name: "ProShape All-in-1",
     subName: "Shake - Bourbon Vanília",
     description: "Lágy vanília ízű étkezéshelyettesítő shake. Biztosítja az összes szükséges mikrotápanyagot és fehérjét, így helyettesítve a teljes értékű étkezéseket.",
     imageSrc: "/proshape_vanilla.png",
@@ -77,7 +77,7 @@ export default function ProductShowcase() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-          <h2 className="text-xs font-bold text-brand-teal uppercase tracking-widest">FitLine Súlycsökkentő Megoldások</h2>
+          <h2 className="text-xs font-bold text-brand-teal uppercase tracking-widest">Súlycsökkentő Megoldások</h2>
           <h3 className="text-3xl sm:text-4xl font-extrabold text-brand-slate dark:text-neutral-100 tracking-tight">
             Válassza ki az Életmódjához Illő Termékeket
           </h3>
@@ -147,7 +147,7 @@ export default function ProductShowcase() {
                   rel="noopener noreferrer"
                   className="w-full flex items-center justify-center px-4 py-3 border border-transparent text-sm font-bold rounded-full text-white bg-brand-orange hover:bg-brand-orange-hover shadow-xs transition-all duration-200"
                 >
-                  Rendelés a Hivatalos Shopban
+                  Megrendelés
                   <svg className="w-4 h-4 ml-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                   </svg>

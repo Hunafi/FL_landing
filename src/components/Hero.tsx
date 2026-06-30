@@ -28,7 +28,7 @@ export default function Hero() {
             </h1>
             
             <p className="text-lg md:text-xl text-neutral-600 dark:text-neutral-300 font-light leading-relaxed">
-              Tapasztalja meg a koplalás nélküli alakformálást. A FitLine súlykontroll program a szabadalmaztatott <strong>Nutrient Transport Concept (NTC®)</strong> segítségével oda juttatja a tápanyagokat, ahol és amikor szükség van rájuk – közvetlenül a sejtekbe. Prémium termékeink természetes módon <strong>glutén- és laktózmentesek</strong>.
+              Tapasztalja meg a koplalás nélküli alakformálást. A súlykontroll program a szabadalmaztatott <strong>Nutrient Transport Concept (NTC®)</strong> segítségével oda juttatja a tápanyagokat, ahol és amikor szükség van rájuk – közvetlenül a sejtekbe. Prémium termékeink természetes módon <strong>glutén- és laktózmentesek</strong>.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
@@ -73,7 +73,7 @@ export default function Hero() {
             <div className="relative w-full max-w-[420px] aspect-[3/4] rounded-3xl overflow-hidden border border-neutral-200/60 dark:border-neutral-800 shadow-2xl bg-neutral-50 dark:bg-neutral-900">
               <Image
                 src="/woman_shaker.jpg"
-                alt="Hölgy FitLine shakerrel és ProShape All-in-1 termékkel a konyhában"
+                alt="Hölgy shakerrel és ProShape All-in-1 termékkel a konyhában"
                 fill
                 sizes="(max-width: 768px) 100vw, 500px"
                 priority

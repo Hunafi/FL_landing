@@ -9,24 +9,24 @@ interface FaqItem {
 
 const faqItems: FaqItem[] = [
   {
-    question: "Hogyan támogatják a FitLine termékek a súlycsökkentést?",
-    answer: "A FitLine termékek nem gyors csodaszerek, hanem a szervezet természetes anyagcsere-folyamatait és emésztését optimalizálják. A TopShape rostkomplex segít csökkenteni a kalóriabevitelt a jóllakottságérzet növelésével, míg a ProShape All-in-1 shake-ek teljes értékű étkezéshelyettesítőként biztosítják a szükséges tápanyagokat és fehérjéket, elkerülve a koplalást és az izomvesztést."
+    question: "Hogyan támogatják a termékek a súlycsökkentést?",
+    answer: "A termékek nem gyors csodaszerek, hanem a szervezet természetes anyagcsere-folyamatait és emésztését optimalizálják. A TopShape rostkomplex segít csökkenteni a kalóriabevitelt a jóllakottságérzet növelésével, míg a ProShape All-in-1 shake-ek teljes értékű étkezéshelyettesítőként biztosítják a szükséges tápanyagokat és fehérjéket, elkerülve a koplalást és az izomvesztést."
   },
   {
     question: "Mi az az NTC® (Tápanyag-szállítási Koncepció)?",
-    answer: "Az NTC® a PM-International tudományos csapatának egyedülálló, szabadalmaztatott koncepciója. Biztosítja, hogy a tápanyagok pontosan oda jussanak, ahol és amikor szükség van rájuk – sejtszinten. Ennek köszönhetően a FitLine termékek felszívódása és biohasznosulása többszöröse a hagyományos tablettás táplálékkiegészítőkének."
+    answer: "Az NTC® a tudományos csapat egyedülálló, szabadalmaztatott koncepciója. Biztosítja, hogy a tápanyagok pontosan oda jussanak, ahol és amikor szükség van rájuk – sejtszinten. Ennek köszönhetően a termékek felszívódása és biohasznosulása többszöröse a hagyományos tablettás táplálékkiegészítőkének."
   },
   {
     question: "Hogyan kell alkalmazni a termékeket az optimális eredményért?",
     answer: "A fenntartható súlycsökkentéshez javasoljuk, hogy napi két főétkezést (például a reggelit és a vacsorát) váltson ki egy-egy krémes ProShape All-in-1 shake-kel. A harmadik étkezés legyen egy kiegyensúlyozott, vegyes étkezés. A TopShape rostkomplexet főétkezések előtt 15-30 perccel javasolt fogyasztani bőséges vízzel, míg a Herbaslim teát egész nap elosztva érdemes inni a folyadékpótlás és méregtelenítés érdekében."
   },
   {
-    question: "Biztonságosak a FitLine termékek? Szerepelnek a Kölni Listán?",
-    answer: "Igen, a biztonság a legfőbb prioritásunk. Minden FitLine termék Németországban készül, a gyógyszeriparban alkalmazott legszigorúbb GMP minőségbiztosítási szabványok szerint. Ezenkívül minden termékünk szerepel a Kölni Listán® (Kölner Liste), ami független laboratóriumi igazolást jelent arra, hogy doppingmentesek, nehézfémektől és egyéb szennyeződésektől mentesek."
+    question: "Biztonságosak a termékek? Szerepelnek a Kölni Listán?",
+    answer: "Igen, a biztonság a legfőbb prioritásunk. Minden termék Németországban készül, a gyógyszeriparban alkalmazott legszigorúbb GMP minőségbiztosítási szabványok szerint. Ezenkívül minden termékünk szerepel a Kölni Listán® (Kölner Liste), ami független laboratóriumi igazolást jelent arra, hogy doppingmentesek, nehézfémektől és egyéb szennyeződésektől mentesek."
   },
   {
     question: "Hogyan tudok rendelni, és mennyi idő alatt érkeznek meg a termékek?",
-    answer: "A weboldalon található vásárlási gombok közvetlenül a hivatalos FitLine online áruházba irányítják Önt. A megrendelését közvetlenül a PM-International központi raktára dolgozza fel, és futárszolgálattal szállítja ki az Ön magyarországi címére, általában 2-4 munkanapon belül."
+    answer: "A weboldalon található gombok segítségével közvetlenül a biztonságos rendelési felületre jut. A megrendelés feldolgozása után a csomagot futárszolgálat szállítja ki az Ön magyarországi címére, általában 2-4 munkanapon belül."
   },
   {
     question: "Van-e garancia a termékekre?",
@@ -53,7 +53,7 @@ export default function Faq() {
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-xs font-bold text-brand-teal uppercase tracking-widest">Gyakran Ismételt Kérdések</h2>
           <h3 className="text-3xl sm:text-4xl font-extrabold text-brand-green-dark dark:text-neutral-100 tracking-tight">
-            Kérdések és Válaszok a FitLine-ról
+            Kérdések és Válaszok a Termékekről
           </h3>
           <p className="text-neutral-600 dark:text-neutral-300 font-light leading-relaxed max-w-2xl mx-auto">
             Szeretnénk, ha minden információ birtokában hozná meg a döntését. Íme a leggyakoribb kérdések, amelyek a súlykontroll program kapcsán felmerülnek.

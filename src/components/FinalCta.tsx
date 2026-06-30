@@ -12,7 +12,7 @@ export default function FinalCta() {
             Készen áll arra, hogy elérje a legjobb formáját?
           </h3>
           <p className="text-neutral-600 dark:text-neutral-300 font-light text-lg md:text-xl leading-relaxed">
-            Csatlakozzon több millió elégedett FitLine fogyasztóhoz világszerte. Kezdje el a súlycsökkentő programot teljesen kockázatmentesen a 30 napos elégedettségi garanciával!
+            Csatlakozzon több millió elégedett fogyasztóhoz világszerte. Kezdje el a súlycsökkentő programot teljesen kockázatmentesen a 30 napos elégedettségi garanciával!
           </p>
         </div>
 

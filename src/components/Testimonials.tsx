@@ -12,7 +12,7 @@ export default function Testimonials() {
       name: "Kovács Péter",
       age: "38 éves, Győr",
       quote: "Mindig gondot okozott a délutáni fáradtság és a folyamatos nassolási vágy az irodában. A TopShape rostok ebéd előtt eltelítenek és kellemes teltségérzetet adnak. Végre nem vágyom a cukorra és a nassolásra délután 3-kor!",
-      product: "FitLine TopShape",
+      product: "TopShape",
       result: "Megszűnt sóvárgás & laposabb has",
       avatarBg: "bg-neutral-100 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200"
     },
@@ -37,7 +37,7 @@ export default function Testimonials() {
             Akik Már Elindultak a Változás Útján
           </h3>
           <p className="text-neutral-500 dark:text-neutral-400 font-light leading-relaxed text-base md:text-lg">
-            Olvassa el azoknak a véleményét, akik a FitLine prémium termékeit választották a fenntartható életmódváltás és súlykontroll eléréséhez.
+            Olvassa el azoknak a véleményét, akik prémium termékeinket választották a fenntartható életmódváltás és súlykontroll eléréséhez.
           </p>
         </div>
 
@@ -93,7 +93,7 @@ export default function Testimonials() {
         {/* Disclaimer note */}
         <div className="mt-12 text-center">
           <p className="text-[11px] text-neutral-400 dark:text-neutral-500 font-light max-w-2xl mx-auto">
-            *Megjegyzés: Az elért eredmények egyénenként változhatnak, és megfelelő kalóriaszegény táplálkozás, valamint rendszeres testmozgás mellett valósulnak meg. A FitLine termékek nem alkalmasak betegségek diagnosztizálására vagy kezelésére.
+            *Megjegyzés: Az elért eredmények egyénenként változhatnak, és megfelelő kalóriaszegény táplálkozás, valamint rendszeres testmozgás mellett valósulnak meg. A termékek nem alkalmasak betegségek diagnosztizálására vagy kezelésére.
           </p>
         </div>
 

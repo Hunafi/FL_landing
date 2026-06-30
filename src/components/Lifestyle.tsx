@@ -14,7 +14,7 @@ export default function Lifestyle() {
             <div className="relative w-full aspect-[16/9] rounded-3xl overflow-hidden shadow-lg border border-neutral-200/50 dark:border-neutral-800 bg-neutral-50 dark:bg-[#161618]">
               <Image
                 src="/women_cooking.jpg"
-                alt="Két hölgy a konyhában FitLine ProShape All-in-1 shake-et készít"
+                alt="Két hölgy a konyhában ProShape All-in-1 shake-et készít"
                 fill
                 sizes="(max-width: 768px) 100vw, 600px"
                 loading="lazy"
@@ -35,7 +35,7 @@ export default function Lifestyle() {
             </h3>
             
             <p className="text-neutral-500 dark:text-neutral-400 font-light leading-relaxed text-base">
-              Felejtse el az önsanyargató diétákat és a kínzó éhségérzetet. A FitLine programot úgy tervezték, hogy zökkenőmentesen beilleszkedjen a legzsúfoltabb mindennapokba is. Ráadásul a termékek <strong>laktóz- és gluténmentesek</strong>, így az ételérzékenységgel küzdők is teljesen biztonságosan fogyaszthatják.
+              Felejtse el az önsanyargató diétákat és a kínzó éhségérzetet. A súlycsökkentő programot úgy tervezték, hogy zökkenőmentesen beilleszkedjen a legzsúfoltabb mindennapokba is. Ráadásul a termékek <strong>laktóz- és gluténmentesek</strong>, így az ételérzékenységgel küzdők is teljesen biztonságosan fogyaszthatják.
             </p>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">

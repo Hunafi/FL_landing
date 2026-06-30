@@ -9,8 +9,8 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "FitLine Súlykontroll & Életmódváltás | Prémium Wellness Megoldások",
-  description: "Tapasztalja meg a fenntartható súlycsökkentés élményét a FitLine termékekkel. Német prémium minőség és a szabadalmaztatott NTC® technológia sejtszinten.",
+  title: "Súlykontroll & Életmódváltás | Prémium Wellness Megoldások",
+  description: "Tapasztalja meg a fenntartható súlycsökkentés élményét prémium termékekkel. Német prémium minőség és a szabadalmaztatott NTC® technológia sejtszinten.",
 };
 
 export default function RootLayout({

@@ -12,20 +12,20 @@ import FinalCta from "@/components/FinalCta";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "FitLine Súlycsökkentés & Életmódváltás | Hivatalos Ajánlói Oldal",
-  description: "Tapasztalja meg a fenntartható súlycsökkentést és zsírégetést a FitLine prémium termékekkel. Kölni Listás tisztaság, német minőség és szabadalmaztatott NTC® technológia.",
+  title: "Súlycsökkentés & Életmódváltás | Hivatalos Ajánlói Oldal",
+  description: "Tapasztalja meg a fenntartható súlycsökkentést és zsírégetést prémium termékekkel. Kölni Listás tisztaság, német minőség és szabadalmaztatott NTC® technológia.",
   keywords: [
-    "FitLine Súlykontroll",
-    "FitLine TopShape",
+    "Súlykontroll program",
+    "TopShape rostkomplex",
     "egészséges súlycsökkentés",
-    "FitLine fogyás",
-    "FitLine ProShape All-in-1",
+    "fogyókúra éhezés nélkül",
+    "ProShape All-in-1",
     "NTC technológia",
     "fogyás koplalás nélkül",
     "anyagcsere felpörgetése"
   ],
   openGraph: {
-    title: "FitLine Súlycsökkentés & Életmódváltás | Prémium Wellness Megoldások",
+    title: "Súlycsökkentés & Életmódváltás | Prémium Wellness Megoldások",
     description: "Fenntartható alakformálás és vitalitás a szabadalmaztatott NTC® sejtszintű felszívódással. Német prémium minőség és 30 napos garancia.",
     type: "website",
     locale: "hu_HU",
@@ -39,12 +39,12 @@ export default function Home() {
     "@graph": [
       {
         "@type": "Product",
-        "name": "FitLine TopShape Starter Set",
+        "name": "TopShape Starter Set",
         "image": "/topshape_starterset.png",
         "description": "Komplex testsúlycsökkentő csomag a látványos és tartós eredményekért, szabadalmaztatott NTC® technológiával.",
         "brand": {
           "@type": "Brand",
-          "name": "FitLine"
+          "name": "Premium"
         },
         "offers": {
           "@type": "Offer",
@@ -62,10 +62,10 @@ export default function Home() {
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Hogyan támogatják a FitLine termékek a súlycsökkentést?",
+            "name": "Hogyan támogatják a termékek a súlycsökkentést?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "A FitLine termékek a szervezet természetes anyagcsere-folyamatait és emésztését optimalizálják. A TopShape rostkomplex segít csökkenteni a kalóriabevitelt a jóllakottságérzet növelésével, míg a ProShape All-in-1 shake-ek teljes értékű étkezéshelyettesítőként biztosítják a szükséges tápanyagokat."
+              "text": "A termékek a szervezet természetes anyagcsere-folyamatait és emésztését optimalizálják. A TopShape rostkomplex segít csökkenteni a kalóriabevitelt a jóllakottságérzet növelésével, míg a ProShape All-in-1 shake-ek teljes értékű étkezéshelyettesítőként biztosítják a szükséges tápanyagokat."
             }
           },
           {

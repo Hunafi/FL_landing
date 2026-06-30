@@ -22,7 +22,7 @@ export default function Science() {
             </h2>
             
             <p className="text-neutral-600 dark:text-neutral-300 font-light leading-relaxed text-base md:text-lg">
-              A FitLine termékek kiemelkedő hatékonyságának titka a szabadalmaztatott <strong>Tápanyag-szállítási Koncepció (NTC®)</strong>. Ez a technológia biztosítja, hogy a vitaminok, ásványi anyagok és zsírégető rostok pontosan oda kerüljenek, ahol és amikor szükség van rájuk – sejtszinten.
+              A termékek kiemelkedő hatékonyságának titka a szabadalmaztatott <strong>Tápanyag-szállítási Koncepció (NTC®)</strong>. Ez a technológia biztosítja, hogy a vitaminok, ásványi anyagok és zsírégető rostok pontosan oda kerüljenek, ahol és amikor szükség van rájuk – sejtszinten.
             </p>
 
             <div className="space-y-6 pt-4">
@@ -47,7 +47,7 @@ export default function Science() {
                 <div>
                   <h4 className="text-base font-bold text-brand-slate">Magasabb biohasznosulás</h4>
                   <p className="text-base text-neutral-500 dark:text-neutral-400 font-light mt-0.5">
-                    Míg a hagyományos tabletták hatóanyagainak nagy része kiürül, a FitLine technológiája szinte teljes felszívódást biztosít.
+                    Míg a hagyományos tabletták hatóanyagainak nagy része kiürül, a szabadalmaztatott technológia szinte teljes felszívódást biztosít.
                   </p>
                 </div>
               </div>

@@ -8,15 +8,15 @@ export default function Footer() {
           <div className="md:col-span-5 space-y-5">
             <div className="flex flex-col">
               <span className="text-xl font-bold tracking-tight text-brand-slate dark:text-white">
-                FitLine<span className="text-brand-orange">®</span>
+                Súlykontroll<span className="text-brand-orange"> &</span> Életmód
               </span>
               <span className="text-[10px] uppercase tracking-wider text-neutral-400 font-semibold leading-none mt-1">
-                Független Partner Weboldal
+                Ajánlói Weboldal
               </span>
             </div>
             
             <p className="text-xs text-neutral-500 dark:text-neutral-400 font-light leading-relaxed max-w-sm">
-              Ez a weboldal egy független FitLine forgalmazó/partner által üzemeltetett ajánlói oldal, nem a PM-International AG hivatalos vállalati oldala. A vásárlások a hivatalos FitLine áruházban történnek biztonságos fizetéssel és központi szállítással.
+              Ez a weboldal egy ajánlói oldal, nem a hivatalos vállalati weboldal. A vásárlások és a kiszállítások a központi raktáron keresztül történnek biztonságos fizetéssel és közvetlen szállítással.
             </p>
 
             {/* Social Icons Section */}
@@ -70,7 +70,7 @@ export default function Footer() {
                 <a href="#termekek" className="hover:text-brand-teal transition-colors">Termékek</a>
               </li>
               <li>
-                <a href="#elonyök" className="hover:text-brand-teal transition-colors">Miért a FitLine?</a>
+                <a href="#elonyök" className="hover:text-brand-teal transition-colors">Előnyök</a>
               </li>
               <li>
                 <a href="#tudomany" className="hover:text-brand-teal transition-colors">Tudomány & NTC®</a>
@@ -88,7 +88,7 @@ export default function Footer() {
           <div className="md:col-span-4 space-y-4">
             <h4 className="text-sm font-bold text-brand-slate uppercase tracking-wider">Hivatalos Vásárlás</h4>
             <p className="text-xs text-neutral-500 dark:text-neutral-400 font-light leading-relaxed">
-              Minden megrendelést a PM-International AG szolgál ki közvetlenül a hivatalos elosztó központokból. Az árak és az elégedettségi garancia megegyezik a hivatalos vásárlói feltételekkel.
+              Minden megrendelést közvetlenül a központi elosztó központokból szolgálnak ki. Az árak és az elégedettségi garancia megegyezik a hivatalos vásárlói feltételekkel.
             </p>
             <div className="pt-2">
               <a
@@ -97,7 +97,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-xs font-bold rounded-full text-white bg-brand-orange hover:bg-brand-orange-hover shadow-sm transition-all duration-200"
               >
-                Ugrás a FitLine Webáruházba
+                Megrendelés
               </a>
             </div>
           </div>
@@ -110,7 +110,7 @@ export default function Footer() {
             <strong>Egészségügyi nyilatkozat:</strong> A termékek étrend-kiegészítők, nem minősülnek gyógyszernek, és nem alkalmasak betegségek megelőzésére, diagnosztizálására, kezelésére vagy gyógyítására. Az étrend-kiegészítők nem helyettesítik a kiegyensúlyozott, vegyes étrendet és az egészséges életmódot. Az elért testsúlycsúlycsökkentési eredmények egyénenként eltérhetnek a személyes anyagcsere, fizikai aktivitás és étrendi fegyelem függvényében.
           </p>
           <p className="text-[10px] text-neutral-400 dark:text-neutral-500 font-light">
-            © {new Date().getFullYear()} FitLine Független Partner. Minden jog fenntartva. PM-International, FitLine, NTC logók és védjegyek a PM-International AG bejegyzett tulajdonát képezik.
+            © {new Date().getFullYear()} Súlykontroll & Életmód. Minden jog fenntartva.
           </p>
         </div>
       </div>

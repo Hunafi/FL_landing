@@ -33,10 +33,7 @@ export default function Header() {
           <div className="flex-shrink-0 flex items-center">
             <a href="#" className="flex flex-col">
               <span className="text-xl font-bold tracking-tight text-brand-green-dark dark:text-white">
-                FitLine<span className="text-brand-orange">®</span>
-              </span>
-              <span className="text-[10px] uppercase tracking-wider text-neutral-500 dark:text-neutral-400 font-semibold leading-none">
-                Független Partner
+                Súlykontroll<span className="text-brand-orange"> &</span> Életmód
               </span>
             </a>
           </div>
@@ -53,7 +50,7 @@ export default function Header() {
               href="#elonyök"
               className="text-sm font-medium text-brand-slate/85 hover:text-brand-teal transition-colors"
             >
-              Miért a FitLine?
+              Előnyök
             </a>
             <a
               href="#tudomany"
@@ -84,7 +81,7 @@ export default function Header() {
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center px-5 py-2.5 border border-transparent text-sm font-semibold rounded-full text-white bg-brand-orange hover:bg-brand-orange-hover shadow-sm hover:shadow transition-all duration-200"
             >
-              Rendelés a Webáruházban
+              Megrendelés
             </a>
           </div>
 
@@ -153,7 +150,7 @@ export default function Header() {
               onClick={() => setIsOpen(false)}
               className="block px-3 py-2 rounded-md text-base font-medium text-brand-slate hover:bg-neutral-50 dark:hover:bg-neutral-800 hover:text-brand-teal"
             >
-              Miért a FitLine?
+              Előnyök
             </a>
             <a
               href="#tudomany"
@@ -183,7 +180,7 @@ export default function Header() {
                 rel="noopener noreferrer"
                 className="w-full flex items-center justify-center px-4 py-3 border border-transparent text-base font-semibold rounded-full text-white bg-brand-orange hover:bg-brand-orange-hover shadow-sm"
               >
-                Rendelés a Webáruházban
+                Megrendelés
               </a>
             </div>
           </div>
